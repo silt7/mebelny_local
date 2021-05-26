@@ -1,0 +1,5 @@
+.bx-filter-parameters-box-hint, .bx-filter-select-text { color:#929fb0; font-family: 'SegoeUIRegular'; font-size:14px}
+.bx-filter-select-text { margin-top:3px;}
+.bx-filter-select-text:hover { cursor:pointer;}
+.popup-window { border:1px solid #929fb0;}
+/*.bx-filter-select-text:after{ content: "\f107" !important; font-family:'FontAwesome'; } */

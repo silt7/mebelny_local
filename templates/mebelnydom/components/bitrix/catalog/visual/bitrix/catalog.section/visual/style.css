@@ -1,0 +1,57 @@
+.wds_gab {
+    font: 14px "SegoeUIRegular";
+    color: #929fb0;
+    padding: 0 18px 0 18px;
+    margin-bottom: 10px;
+    margin-top: -15px;
+}
+.bx-no-touch #wrap-news .product-wrap:hover .product-block {
+    min-height: 445px !important;
+}
+.wds_gab_item {
+    display: flex;
+}
+.wds_gab_dottes {
+    border-bottom: 1px dotted;
+    width: 66%;
+}
+.w_glubina .wds_gab_dottes {
+    width: 62%;
+}
+.w_vysota .wds_gab_dottes {
+    width: 64.5%;
+}
+.bx-no-touch #wrap-news .product-wrap:hover .product-block .desc-product{
+    margin-bottom: 17px;
+}
+.product-block .wds_gab{
+    margin-bottom: 25px;
+}
+.product-wrap .product-block .desc-product {
+    padding-left: 18px;
+    padding-right: 18px;
+}
+.bx-no-touch .js-ax-ajax-pagination-content-container #wrap-news .product-wrap:hover .product-block{
+    min-height: 530px !important;
+}
+.product-wrap .product-block .row div.price{
+    padding-left: 0;
+}
+.product-wrap .product-block .buscket{
+    margin-left: 18px;
+    margin-right: 18px;
+    margin-top: 5px;
+}
+.product-wrap .product-block .wds_gab_value{
+    color: #4a5060;
+    font-family: SegoeUISemiBold;
+}
+@media screen and (max-width: 1024px) {
+    body .content{
+        background: #fff;
+    }
+    .crumbs{
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+}

@@ -1,0 +1,1 @@
+"use strict";$(document).ready(function(){$(".banner-slider").slick({dots:!0,infinite:!0,speed:300,slidesToShow:1,arrows:!1,adaptiveHeight:!0}),$(".brend-logo").slick({slidesToShow:5,slidesToScroll:1,dots:!1,arrows:!0})});

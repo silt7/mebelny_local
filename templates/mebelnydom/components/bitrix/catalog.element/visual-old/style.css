@@ -1,0 +1,44 @@
+.w_2043 {
+    font: 14px SegoeUISemiBold;
+    margin-bottom: 10px;    
+}
+.w_2043_wrap {
+    text-align: center;
+    color: #1d1b1b;
+    margin-left: 50px;
+}
+.hero .modification-product .count-element {
+    height: 130px !important;
+}
+.description .upholstery-wrap {
+    width: 100%;
+}
+.wds_review_count{
+    font: 13px SegoeUISemiBold;
+    color: #4a5060;
+    margin-right: 5px;
+}
+.product-count-row{
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+    color: #929EB0;
+    display: flex;
+    font-family: "SegoeUIRegular";
+    margin-top: 10px;
+}
+.product-count-column:first-of-type{
+    margin-right: 16px;
+}
+.product__title span.product-count-green, .product__title span.product-count-brown{
+    font-family: "SegoeUIBold";
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+}
+.product__title span.product-count-green{
+    color: #7FA51D;
+}
+.product__title span.product-count-brown{
+    color: #775441;
+}

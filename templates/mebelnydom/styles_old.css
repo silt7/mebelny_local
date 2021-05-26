@@ -1,0 +1,39 @@
+.content {
+    position: relative;
+    z-index: 10;
+}
+.description .right-desc .share .h3 {
+    margin-bottom: 10px;
+}
+
+.description .right-desc .share {
+    text-align: center;
+}
+
+.product-block .row div.price {
+    padding-left: 10px;
+}
+
+.product-block .desc-product {
+    padding-left: 10px;
+}
+
+.pcontent {
+    font-family:SegoeUIRegular;
+}
+
+.news__title { padding-left:0px;}
+
+.product__buscket.detailProductOneClick {
+    align-items: flex-start;
+    display: inline-block;
+    -webkit-writing-mode: horizontal-tb !important;
+    text-align: center;
+    line-height: 36px;
+}
+.w1510_menuTags_item.active a{
+    color: #3983df;
+}
+.filter.filter_catalog{
+    display: none;
+}

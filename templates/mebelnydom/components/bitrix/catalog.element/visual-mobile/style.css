@@ -1,0 +1,618 @@
+.w_2043 {
+    font: 14px SegoeUISemiBold;
+    margin-bottom: 10px;    
+}
+.w_2043_wrap {
+    text-align: center;
+    color: #1d1b1b;
+    margin-left: 50px;
+}
+.hero .modification-product .count-element {
+    height: 130px !important;
+}
+.description .upholstery-wrap {
+    width: 100%;
+}
+.wds_review_count{
+    font: 13px SegoeUISemiBold;
+    color: #4a5060;
+    margin-right: 5px;
+}
+.product-count-row{
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+    color: #929EB0;
+    display: flex;
+    font-family: "SegoeUIRegular";
+    margin-top: 10px;
+}
+.product-count-column:first-of-type{
+    margin-right: 16px;
+}
+.product__title span.product-count-green, .product__title span.product-count-brown{
+    font-family: "SegoeUIBold";
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+}
+.product__title span.product-count-green{
+    color: #7FA51D;
+}
+.product__title span.product-count-brown{
+    color: #775441;
+}
+.add_favorites .img-wrap::before{
+    background-color: transparent;
+}
+.tabs label span{
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: 0 22px;
+}
+.tabs label.active span{
+    background-size:0 0,auto;
+}
+.mobile-product .description .tabs label{
+    padding: 0;
+}
+.description .tabs label span{
+    display: inline-block;
+    padding: 24px 0 23px 40px;
+}
+.tabs label[for="characteristics"] span{
+    background-image:
+            url('/local/templates/mebelnydom/components/bitrix/catalog/visual/bitrix/catalog.element/visual/img/char.svg'),
+            url('/local/templates/mebelnydom/components/bitrix/catalog/visual/bitrix/catalog.element/visual/img/char-hover.svg');
+}
+.tabs label[for="coloring"] span{
+    background-image:
+            url('/local/templates/mebelnydom/components/bitrix/catalog/visual/bitrix/catalog.element/visual/img/colors.svg'),
+            url('/local/templates/mebelnydom/components/bitrix/catalog/visual/bitrix/catalog.element/visual/img/colors-hover.svg');
+}
+.tabs label[for="upholstery"] span{
+    background-image:
+            url('/local/templates/mebelnydom/components/bitrix/catalog/visual/bitrix/catalog.element/visual/img/upholstery.svg'),
+            url('/local/templates/mebelnydom/components/bitrix/catalog/visual/bitrix/catalog.element/visual/img/upholstery-hover.svg');
+}
+.tabs label[for="desc"] span{
+    background-image:
+            url('/local/templates/mebelnydom/components/bitrix/catalog/visual/bitrix/catalog.element/visual/img/description.svg'),
+            url('/local/templates/mebelnydom/components/bitrix/catalog/visual/bitrix/catalog.element/visual/img/description-hover.svg');
+}
+.tabs label[for="reviews"] span{
+    background-image:
+            url('/local/templates/mebelnydom/components/bitrix/catalog/visual/bitrix/catalog.element/visual/img/reviews.svg'),
+            url('/local/templates/mebelnydom/components/bitrix/catalog/visual/bitrix/catalog.element/visual/img/reviews-hover.svg');
+}
+.tabs label[for="delivery"] span{
+    background-image:
+            url('/local/templates/mebelnydom/components/bitrix/catalog/visual/bitrix/catalog.element/visual/img/delivery.svg'),
+            url('/local/templates/mebelnydom/components/bitrix/catalog/visual/bitrix/catalog.element/visual/img/delivery-hover.svg');
+}
+.tabs label[for="collection"] span{
+    background-image:
+            url('/local/templates/mebelnydom/components/bitrix/catalog/visual/bitrix/catalog.element/visual/img/collection.svg'),
+            url('/local/templates/mebelnydom/components/bitrix/catalog/visual/bitrix/catalog.element/visual/img/collection-hover.svg');
+}
+.upholstery-img-link-title{
+    font-family: "SegoeUIRegular";
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: #495060;
+    margin-top: 8px;
+}
+.upholstery-upholstery .upholstery-img a{
+    margin-right: 24px;
+    margin-bottom: 22px;
+}
+.detail_text h3{
+    font-family: "SegoeUISemiBold";
+    font-size: 22px;
+    line-height: 32px;
+    margin-bottom: 24px;
+}
+.detail_text ul{
+    padding-left: 10px;
+    font-size: 12px;
+    letter-spacing: 0.01em;
+    line-height: 16px;
+    margin-bottom: 24px;
+}
+.description .tabs-item__block .detail_text b{
+    font-family: "SegoeUIBold";
+}
+.description .left-desc .tabs-item input[id="reviews"]:checked+.tabs-item__block{
+    display: block;
+}
+.askaron-reviews-for-element .modal-review-form{
+    background: rgba(0, 0, 0, 0.5);
+}
+.askaron-reviews-for-element .modal-busket__dialog{
+    background: #fff;
+    width: 502px;
+    border-radius: 16px;
+    padding: 32px;
+}
+.add_reviews_stars .radio__text:before{
+    border: none;
+    width: 32px;
+    height: 32px;
+    background: url('/local/templates/mebelnydom/components/askaron/askaron.reviews.new/img/star-grey.png') no-repeat center center;
+    top: 0;
+}
+.add_reviews_stars .radio:checked + .radio__text:after {
+    display: none;
+}
+.add_reviews_stars .checkbox__label{
+    margin-bottom: 0;
+}
+.add_reviews_stars .radio__text{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    padding-left: 0;
+}
+.add_reviews_stars .checkbox__label.active .radio__text:before {
+    background: url('/local/templates/mebelnydom/components/askaron/askaron.reviews.new/img/star-yello.png') no-repeat center center;
+}
+.description .tabs-item__block p.add_reviews_stars{
+    margin-bottom: 19px;
+}
+#add-review-btn{
+    align-self: flex-end;
+    display: inline-block;
+    background: #3983DF;
+    border-radius: 2px;
+    padding: 8px 10px;
+    color: #FFFFFF;
+    font-family: "SegoeUISemiBold";
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 32px;
+}
+.reviews-block-row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -18px;
+    margin-left: -18px;
+}
+.reviews-block{
+    width: 50%;
+    padding: 0 18px;
+}
+.reviews__title .stars img{
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+.reviews__title .stars img:last-of-type{
+    margin-right: 0;
+}
+.reviews-block-noshow{
+    display: none;
+}
+.revews-show-more{
+    text-align: center;
+}
+#revews-show-more-btn{
+    font-family: "SegoeUISemiBold";
+    font-size: 14px;
+    color: #3983DF;
+    padding: 10px 8px;
+    border: 1px solid #3983DF;
+    margin-bottom: 18px;
+    display: inline-block;
+}
+#revews-show-more-btn:hover{
+    color: #fff;
+    background: #3983DF;
+}
+.tabs-item__block-delivery{
+    flex-direction: column;
+}
+.tabs-item__block-delivery .share{
+    align-self: flex-end;
+    margin-bottom: 32px;
+}
+.right-desc-row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -2px;
+    margin-right: -2px;
+}
+.right-desc-inner{
+    border: 1px solid #ECEFF5;
+    width: 100%;
+    height: 100%;
+    padding: 24px 16px;
+}
+.uptl_toolbar .horizontal{
+    float: right;
+}
+.share .uptl_container .uptl_toolbar  ul.horizontal{
+    padding-right: 0 !important;
+}
+.collection__product-slide{
+    padding-left: 2px;
+    padding-right: 2px;
+}
+.recomend__product .slick-slider.collection-slider .slick-list{
+    margin: 0 -2px;
+}
+.collection__product-slide .product-block img{
+    margin-top: 0;
+}
+.collection__product-slide .product-block{
+    padding-top: 0;
+    height: auto !important;
+    border: 1px solid #ECEFF5;
+    border-radius: 8px;
+}
+.collection__product-slide .product-block img{
+    margin-top: 20px;
+}
+.collection__product-slide .image-link{
+    margin-bottom: 8px;
+}
+.collection__product-name{
+    padding-left: 12px;
+    padding-right: 12px;
+    color: #000;
+    margin-bottom: 8px;
+    font-family: SegoeUISemiBold;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    display: inline-block;
+    height: 40px;
+    overflow: hidden;
+}
+.collection__product-slide  .product-block .row{
+    min-height: auto;
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+    margin-bottom: 16px;
+}
+.collection__product-slide  .product-block .row .price{
+    padding-left: 0;
+    color: #000;
+    font-family: SegoeUISemiBold;
+    font-size: 18px;
+    line-height: 24px;
+}
+.collection__product-slide  .product-block .row .like{
+    margin-right: 0;
+}
+.collection__product-slide .product-block .row .like i.fa-retweet{
+    margin-right: 12px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    background-image:
+            url('/local/templates/mebelnydom/components/bitrix/catalog.section/collection-carousel/img/libra.svg'),
+            url('/local/templates/mebelnydom/components/bitrix/catalog.section/collection-carousel/img/libra-hover.svg');
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+.collection__product-slide .product-block .row .like i.fa-retweet:hover, .collection__product-slide .product-block .row .like i.fa-retweet.active{
+    background-size: 0 0, auto;
+}
+.collection__product-slide .product-block .row .like i.fa-heart{
+    margin-right: 0;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    background-image:
+            url('/local/templates/mebelnydom/components/bitrix/catalog.section/collection-carousel/img/heart.svg'),
+            url('/local/templates/mebelnydom/components/bitrix/catalog.section/collection-carousel/img/heart-hover.svg');
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+.collection__product-slide .product-block .row .like i.fa-heart:hover, .collection__product-slide .product-block .row .like i.fa-heart.active{
+    background-size: 0 0, auto;
+}
+.collection__product-slide .product-block .row .like i.fa-retweet:before, .collection__product-slide .product-block .row .like i.fa-heart:before{
+    content: '';
+}
+.collection-basket{
+    text-align: center;
+    margin-bottom: 16px;
+    margin-top: auto;
+}
+.collection-basket-btn{
+    background: #3983DF;
+    border-radius: 2px;
+    display: inline-block;
+    padding: 8px 10px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: SegoeUISemiBold;
+}
+.collection__product-slide a:active, .collection__product-slide a:focus, .collection__product-slide a:visited{
+    outline: none;
+    border: none;
+}
+.recomend__product .collection-slider .slick-prev{
+    right: auto;
+    left: -26px;
+    margin-left: 0 !important;
+    top: 50%;
+    margin-top: -10px;
+}
+.recomend__product .collection-slider .slick-next{
+    right: -28px;
+    left: auto;
+    margin-left: 0 !important;
+    top: 50%;
+    margin-top: -10px;
+}
+.recomend__product .collection-slider .slick-next:after, .recomend__product .collection-slider .slick-prev:after{
+    color: #929EB0;
+    font-size: 26px;
+}
+.collection__product-slide .collection__product-slide-bottom .old-price{
+    padding-left: 32px;
+    font-size: 12px;
+    line-height: 16px;
+    font-family: SegoeUIRegular;
+    letter-spacing: 0.01em;
+    text-decoration-line: line-through;
+    color: #929EB0;
+}
+.collection-slider .slick-track{
+    display: flex;
+}
+.collection-slider .slick-track .collection__product-slide{
+    height: auto;
+}
+.collection__product-slide-bottom{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.mobile-product .product__title{
+    display: block;
+    background: #fff;
+    margin-bottom: 0;
+    padding: 24px 16px;
+}
+.mobile-product .product-count-row{
+    flex-direction: column;
+    margin-top: 0;
+    text-align: right;
+}
+.mobile-count-row{
+    display: flex;
+    justify-content: space-between;
+}
+.mobile-product .product__title h1{
+    margin-bottom: 16px;
+}
+.mobile-product .product__title span{
+    line-height: 16px;
+    font-family: SegoeUIRegular;
+}
+.mobile-product .product-count-column:first-of-type{
+    margin-right: 0;
+}
+.mobile-product .hero .slider-photo-small div:active, .mobile-product .hero .slider-photo-small div:focus, .mobile-product .hero .slider-photo-small div:active, .mobile-product .hero .slider-photo-small div:hover{
+    outline: none;
+    border: none;
+}
+@media screen and (max-width: 1024px) {
+
+}
+@media screen and (max-width: 736px) {
+    .mobile-product .slider-photo-main__item{
+        text-align: center;
+    }
+    .mobile-product .slider-photo-main__item a{
+        display: inline-block;
+        position: relative;
+    }
+    .mobile-product .hero .slider-photo .slider-photo-small{
+        max-width: 320px;
+        width: auto;
+    }
+    .mobile-product .hero .slider-photo-small__item{
+        margin-top: 14px;
+    }
+    .mobile-product .hero .slider-photo-main .slick-slide img{
+        height: 217px;
+    }
+    .mobile-product .product__title{
+        border-bottom: none;
+    }
+    .mobile-product .hero{
+        padding-top: 0;
+    }
+    .mobile-product .product-desc{
+        display: flex;
+        flex-direction: column;
+    }
+    .mobile-product .product-desc .add-product{
+        order: -2;
+        flex-direction: row;
+        margin-bottom: 16px;
+        justify-content: flex-start;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 0;
+        border-top: none;
+    }
+    .mobile-product .hero .add__title span{
+        display: none;
+    }
+    .mobile-product .hero .add_favorites{
+        margin-bottom: 0;
+        margin-right: 36px;
+    }
+    .mobile-product .hero .product-desc .product__price{
+        order: -1;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .mobile-product .hero .product-desc .bascket-wrap, .mobile-product .hero .product-desc .old-price-wrap{
+        -webkit-box-pack: left;
+        -ms-flex-pack: left;
+        justify-content: flex-start;
+    }
+    .mobile-product #detailProductBasketButtons{
+        justify-content: flex-end;
+    }
+    .mobile-product .hero .product-desc .old-price-wrap {
+        margin-bottom: 16px;
+    }
+    .mobile-product .hero .product-desc .old-price{
+        width: auto;
+        padding: 6px 12px;
+    }
+    .mobile-product .hero .product-desc .product__sale{
+        max-width: 320px;
+        padding: 16px;
+        margin-bottom: 20px;
+    }
+    .mobile-product .hero .product__sale h6{
+        font-family: SegoeUISemiBold;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0.02em;
+        color: #929EB0;
+    }
+    .mobile-product .hero .product-desc{
+        padding-bottom: 0;
+    }
+}
+.mobile-product .description .tabs{
+    display: block;
+    text-align: center;
+    padding-left: 0;
+}
+.mobile-product .description .tabs label{
+    display: block;
+    text-align: center;
+    margin-right: 0;
+}
+.mobile-product .description .tabs label{
+    background-image: none;
+    border-bottom: 1px solid #ECEFF5;
+}
+.mobile-product .description .tabs-item__block{
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #ECEFF5;
+    display: none;
+}
+.mobile-product .description .tabs-item__block .product-list{
+    width: 100%;
+    margin-bottom: 0;
+}
+.mobile-product .description .tabs-item__block .product-list li span{
+    width: 50% !important;
+    margin-right: 0;
+    vertical-align: top;
+    padding: 10px 0;
+}
+.mobile-product .description .tabs-item__block .product-list li span:first-child{
+    padding-right: 16px;
+}
+.mobile-product .description .tabs-item__block .product-list li span:last-child{
+    padding-left: 16px;
+}
+.mobile-product .upholstery-img-link-title{
+    text-align: left;
+}
+.mobile-product .description .upholstery-wrap .h3{
+    text-align: left;
+}
+.mobile-product .detail_text{
+    text-align: left;
+}
+.mobile-product .description .reviews-block{
+    text-align: left;
+}
+@media screen and (max-width: 736px) {
+    .mobile-product .description .reviews-block{
+        width: 100%;
+    }
+    .mobile-product .description .reviews-wrap {
+        margin-bottom: 0;
+    }
+    .mobile-product #revews-show-more-btn{
+        margin-bottom: 0;
+    }
+}
+.mobile-product .description .tabs-item__block p.add_reviews_stars{
+    display: flex;
+    justify-content: center;
+}
+@media screen and (max-width: 736px) {
+    .mobile-product .askaron-reviews-for-element .modal-busket__dialog{
+        padding: 5px;
+        width: 400px;
+    }
+    .mobile-product .description .add__review .h2{
+        margin-bottom: 5px;
+    }
+    .mobile-product .description .tabs-item__block p.add_reviews_stars{
+        margin-bottom: 0;
+    }
+    .mobile-product .description .tabs-item__block p.add_reviews_stars span{
+        padding-bottom: 0;
+    }
+    .mobile-product .description .add__review input, .mobile-product .description .add__review textarea{
+        margin-bottom: 5px;
+    }
+    .mobile-product .description .add__review input[type="submit"]{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .mobile-product .description .add__review textarea{
+        height: 60px;
+    }
+    .mobile-product .description .add__review{
+        margin-bottom: 0;
+    }
+}
+.mobile-product .add_reviews_stars .checkbox__label{
+    border-bottom: none !important;
+}
+.mobile-product .tabs-item__block-delivery .share{
+    margin-bottom: 48px;
+}
+@media screen and (max-width: 736px) {
+    .mobile-product .description .right-desc__block{
+        width: 100%;
+        text-align: left;
+    }
+    .mobile-product .right-desc-inner{
+        max-width: 290px;
+        margin: auto;
+    }
+    .mobile-product .description .right-desc__block:nth-child(n-1){
+        margin-bottom: 24px;
+    }
+}
+.mobile-product .description .tabs>label:hover {
+    color: #929EB0;
+    border-bottom: 1px solid #ECEFF5;
+}
+.mobile-product .description .tabs>label.active {
+    color: #3983DF;
+    border-bottom: 2px solid #3983DF;
+}
+.mobile-product .collection__product-name{
+    text-align: left;
+}
+.mobile-product .collection-slider{
+    width: 0;
+    min-width: 280px;
+}
+.mobile-product .collection-slider .collection__product-slide{
+    min-width: 230px;
+}
+.mobile-product .modal-review-form.in{
+    overflow: auto;
+}

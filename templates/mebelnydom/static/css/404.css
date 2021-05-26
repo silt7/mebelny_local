@@ -1,0 +1,240 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+.container {
+    max-width: 1038px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.wrapper {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.block-info {
+       margin-right: 54px;
+       padding-left: 30px;
+}
+.title {
+    font-family: 'Open Sans', sans-serif;
+    color: #4A5160;
+    font-size: 54px;
+    line-height: 56px;
+    width: 384px;
+}
+.subtitle {
+    margin-top: 24px;
+    margin-bottom: 80px;
+    font-family: 'Open Sans', sans-serif;
+    color: #8392A8;
+    font-size: 20px;
+    line-height: 32px;
+}
+.subtitle-category {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    color: #8392A8;
+    margin-top: 40px;
+}
+.button {
+    font-family: 'Open Sans', sans-serif; 
+    display: inline-block;
+    text-decoration: none;
+    background-color: #3E85DC;
+    color: #ffffff;
+    border: 3px solid #3e85dc;
+    border-radius: 2px;
+    font-size: 17px;
+    padding: 6px 56px; 
+    transition: all 1.0s ease;
+}
+.button:hover{
+    text-decoration: none; 
+    background-color: #006089;
+    color: #ffeded;
+    border-color: #006089;
+}
+.wrapper-btn {
+    display: flex;
+    align-items: center;
+    margin-top: 9px;
+    margin-bottom: 19px;
+}
+ .btn {
+     margin-top: 5px;
+    margin-right: 8px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #fff;
+    color: #4A5160;
+    border: 1px solid #E3E5EB;
+    border-radius: 8px;
+    font-size: 16px;
+    padding: 9px 21px;
+    font-family: 'Open Sans';
+    height: 42px;
+    box-sizing: border-box;
+ }
+ .btn-chair {
+     margin-top: 5px;
+     padding: 8px 22px;
+ }
+ .btn-bg {
+    margin-top: 8px;
+    padding: 9px 25px;
+ }
+ .img-icon {
+    margin-right: 9px;
+    vertical-align: middle;
+    display: inline-block;
+ }
+.error{
+    margin:50px 0;
+}
+.error, .error .container, .error .wrapper {
+    min-height: 100vh;
+}
+.error h2{
+    font-weight:600;
+}
+.bg-error {
+    display: inline-block;
+    position: relative;
+    height: 100vh;
+    /* background-position: 313px 54px; */
+    background: #F5F6F9;
+    width: 600px;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+    /* width: 100%; */
+    margin-top: -50px;
+} 
+.sofa-img {
+    position: absolute;
+    top: 33%;
+    left: -2%;
+}
+@media (max-width: 1024px) {
+    .bg-error {
+        width: 441px;
+    }
+    .sofa-img {
+        width: 600px;
+    }
+}
+@media (max-width: 992px) {
+.bg-error {
+    width: 400px;
+}
+.sofa-img {
+    width: 565px;
+}
+}
+@media (max-width: 849px) {
+    .bg-error {
+        width: 279px;
+    }
+    .sofa-img {
+        width: 398px;
+    }
+}
+@media (max-width: 769px) {
+    .sofa-img {
+    width: 100vw;
+    top: 400px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+    }
+    .button {
+        margin-top: 288px;
+    }
+    .block-info {
+        margin-bottom: 20px;
+    }
+    .bg-error {
+        background: transparent;
+        position: static;
+        width: 100%;
+        border-bottom-right-radius: 0px;
+        height: auto;
+    }
+    .title {
+        width: 90vw;
+    }
+    .subtitle br {
+        display: none;
+    }
+    .block-info {
+        margin-top: 0;
+        margin-right: 0;
+        padding-right: 30px;
+    }
+    .wrapper {
+        align-items: unset;
+    }
+}
+
+@media (max-width: 500px) {
+    .button {
+        margin-top: 170px;
+    }
+    .block-info {
+        text-align: center;
+        margin-bottom: 50px;
+        box-sizing: border-box;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .wrapper {
+        display: block;
+    }
+    .title, .subtitle, .subtitle-category {
+        text-align: left;
+    }
+    .wrapper-btn {
+        display: block;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 25px;
+    }
+    .title {
+        font-size: 40px;
+        line-height: 45px;
+    }
+    .subtitle {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .sofa-img {
+        top: 340px;
+    }
+    .btn-bg {
+        margin-top: 8px;
+        padding: 9px 62px !important;
+    }
+    .btn-chair, .btn {
+        padding: 9px 34px;
+    }
+}
+
+@media (max-width: 350px) {
+    .button {
+        margin-top: 110px;
+        padding: 6px 35px;
+    }
+    .btn-chair, .btn {
+        padding: 9px 16px;
+    }
+    .btn-bg {
+        padding: 9px 27px !important;
+    }
+}
+
+@media (max-width: 300px) {
+    .sofa-img {
+        top: 380px;
+    }   
+}

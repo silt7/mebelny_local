@@ -1,0 +1,19 @@
+.left-menu-depth-2  ul {
+    display: none;
+	padding-right: 15px;
+    position: relative;
+}
+ul.left-menu-depth-2 ul .ico-arrow {
+    margin-right: -14px;
+}
+
+.product-content .left-sidebar li a {
+	font: 13px SegoeUIRegular !important;
+	display: inline-block;
+}
+
+.ico-arrow {
+	cursor: pointer;
+	display: inline-block;
+	float: right;
+}

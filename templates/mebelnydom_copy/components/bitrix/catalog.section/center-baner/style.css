@@ -1,0 +1,22 @@
+  .content-wrap .banner-wrap {
+    background-size: cover;
+    -webkit-transition: -webkit-transform .3s ease-in-out;
+    transition: background-size 2s ease-in;
+    -moz-transition: background-size 2s ease-in;
+    -web-kit-transition: background-size 2s ease-in
+  }
+  .content-wrap .banner-wrap:hover {
+    background-size: 150%;
+  }
+  .content-wrap .banner-wrap .text-wrap::before {
+    content: "";
+    display: block;
+    height: 600px;
+    width: 600px;
+    position: absolute;
+    bottom: -480px;
+    left: -250px;
+    z-index: -1;
+    border-radius: 50%;
+    background: #a6881295;
+}

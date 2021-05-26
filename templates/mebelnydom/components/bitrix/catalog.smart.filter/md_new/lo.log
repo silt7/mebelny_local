@@ -1,0 +1,1326 @@
+Array
+(
+    [305] => Array
+        (
+            [ID] => 305
+            [IBLOCK_ID] => 2
+            [CODE] => STYLE
+            [~NAME] => Стиль
+            [NAME] => Стиль
+            [PROPERTY_TYPE] => L
+            [USER_TYPE] => 
+            [USER_TYPE_SETTINGS] => 
+            [DISPLAY_TYPE] => P
+            [DISPLAY_EXPANDED] => 
+            [FILTER_HINT] => 
+            [VALUES] => Array
+                (
+                )
+
+        )
+
+    [17] => Array
+        (
+            [ID] => 17
+            [IBLOCK_ID] => 2
+            [CODE] => BRAND_REF
+            [~NAME] => Бренд
+            [NAME] => Бренд
+            [PROPERTY_TYPE] => S
+            [USER_TYPE] => directory
+            [USER_TYPE_SETTINGS] => Array
+                (
+                    [size] => 1
+                    [width] => 0
+                    [group] => N
+                    [multiple] => N
+                    [TABLE_NAME] => 
+                )
+
+            [DISPLAY_TYPE] => P
+            [DISPLAY_EXPANDED] => 
+            [FILTER_HINT] => 
+            [VALUES] => Array
+                (
+                )
+
+        )
+
+    [155] => Array
+        (
+            [ID] => 155
+            [IBLOCK_ID] => 2
+            [CODE] => H1
+            [~NAME] => Высота изголовья, см
+            [NAME] => Высота изголовья, см
+            [PROPERTY_TYPE] => S
+            [USER_TYPE] => 
+            [USER_TYPE_SETTINGS] => 
+            [DISPLAY_TYPE] => F
+            [DISPLAY_EXPANDED] => 
+            [FILTER_HINT] => 
+            [VALUES] => Array
+                (
+                )
+
+        )
+
+    [156] => Array
+        (
+            [ID] => 156
+            [IBLOCK_ID] => 2
+            [CODE] => H2
+            [~NAME] => Высота изножья, см
+            [NAME] => Высота изножья, см
+            [PROPERTY_TYPE] => S
+            [USER_TYPE] => 
+            [USER_TYPE_SETTINGS] => 
+            [DISPLAY_TYPE] => F
+            [DISPLAY_EXPANDED] => 
+            [FILTER_HINT] => 
+            [VALUES] => Array
+                (
+                )
+
+        )
+
+    [394] => Array
+        (
+            [ID] => 394
+            [IBLOCK_ID] => 2
+            [CODE] => spalnoe_mesto
+            [~NAME] => Спальное место, см
+            [NAME] => Спальное место, см
+            [PROPERTY_TYPE] => L
+            [USER_TYPE] => 
+            [USER_TYPE_SETTINGS] => 
+            [DISPLAY_TYPE] => P
+            [DISPLAY_EXPANDED] => Y
+            [FILTER_HINT] => 
+            [VALUES] => Array
+                (
+                )
+
+        )
+
+    [49] => Array
+        (
+            [ID] => 49
+            [IBLOCK_ID] => 2
+            [CODE] => MATERIAL
+            [~NAME] => Материал
+            [NAME] => Материал
+            [PROPERTY_TYPE] => S
+            [USER_TYPE] => directory
+            [USER_TYPE_SETTINGS] => Array
+                (
+                    [size] => 1
+                    [width] => 0
+                    [group] => N
+                    [multiple] => N
+                    [TABLE_NAME] => b_material
+                )
+
+            [DISPLAY_TYPE] => P
+            [DISPLAY_EXPANDED] => 
+            [FILTER_HINT] => 
+            [VALUES] => Array
+                (
+                )
+
+        )
+
+    [50] => Array
+        (
+            [ID] => 50
+            [IBLOCK_ID] => 2
+            [CODE] => PODMEX
+            [~NAME] => Подъемный механизм
+            [NAME] => Подъемный механизм
+            [PROPERTY_TYPE] => S
+            [USER_TYPE] => directory
+            [USER_TYPE_SETTINGS] => Array
+                (
+                    [size] => 1
+                    [width] => 0
+                    [group] => N
+                    [multiple] => N
+                    [TABLE_NAME] => b_podmec
+                )
+
+            [DISPLAY_TYPE] => F
+            [DISPLAY_EXPANDED] => 
+            [FILTER_HINT] => 
+            [VALUES] => Array
+                (
+                )
+
+        )
+
+    [76] => Array
+        (
+            [ID] => 76
+            [IBLOCK_ID] => 2
+            [CODE] => Krasheniye
+            [~NAME] => Крашение
+            [NAME] => Крашение
+            [PROPERTY_TYPE] => S
+            [USER_TYPE] => directory
+            [USER_TYPE_SETTINGS] => Array
+                (
+                    [size] => 1
+                    [width] => 0
+                    [group] => N
+                    [multiple] => N
+                    [TABLE_NAME] => b_krasheniye
+                )
+
+            [DISPLAY_TYPE] => P
+            [DISPLAY_EXPANDED] => 
+            [FILTER_HINT] => 
+            [VALUES] => Array
+                (
+                )
+
+        )
+
+    [84] => Array
+        (
+            [ID] => 84
+            [IBLOCK_ID] => 2
+            [CODE] => jjj
+            [~NAME] => Механизм трансформации
+            [NAME] => Механизм трансформации
+            [PROPERTY_TYPE] => E
+            [USER_TYPE] => EList
+            [USER_TYPE_SETTINGS] => Array
+                (
+                    [size] => 1
+                    [width] => 0
+                    [group] => N
+                    [multiple] => N
+                )
+
+            [DISPLAY_TYPE] => P
+            [DISPLAY_EXPANDED] => 
+            [FILTER_HINT] => 
+            [VALUES] => Array
+                (
+                )
+
+        )
+
+    [157] => Array
+        (
+            [ID] => 157
+            [IBLOCK_ID] => 2
+            [CODE] => H4
+            [~NAME] => Высота боковины от пола, см
+            [NAME] => Высота боковины от пола, см
+            [PROPERTY_TYPE] => S
+            [USER_TYPE] => 
+            [USER_TYPE_SETTINGS] => 
+            [DISPLAY_TYPE] => P
+            [DISPLAY_EXPANDED] => 
+            [FILTER_HINT] => 
+            [VALUES] => Array
+                (
+                )
+
+        )
+
+    [158] => Array
+        (
+            [ID] => 158
+            [IBLOCK_ID] => 2
+            [CODE] => H3
+            [~NAME] => Наличие ножек
+            [NAME] => Наличие ножек
+            [PROPERTY_TYPE] => S
+            [USER_TYPE] => 
+            [USER_TYPE_SETTINGS] => 
+            [DISPLAY_TYPE] => F
+            [DISPLAY_EXPANDED] => 
+            [FILTER_HINT] => 
+            [VALUES] => Array
+                (
+                )
+
+        )
+
+    [159] => Array
+        (
+            [ID] => 159
+            [IBLOCK_ID] => 2
+            [CODE] => PROSV
+            [~NAME] => Просвет над полом, см
+            [NAME] => Просвет над полом, см
+            [PROPERTY_TYPE] => S
+            [USER_TYPE] => 
+            [USER_TYPE_SETTINGS] => 
+            [DISPLAY_TYPE] => F
+            [DISPLAY_EXPANDED] => 
+            [FILTER_HINT] => 
+            [VALUES] => Array
+                (
+                )
+
+        )
+
+    [160] => Array
+        (
+            [ID] => 160
+            [IBLOCK_ID] => 2
+            [CODE] => YGL
+            [~NAME] => Углубление под матрас, см
+            [NAME] => Углубление под матрас, см
+            [PROPERTY_TYPE] => S
+            [USER_TYPE] => 
+            [USER_TYPE_SETTINGS] => 
+            [DISPLAY_TYPE] => F
+            [DISPLAY_EXPANDED] => 
+            [FILTER_HINT] => 
+            [VALUES] => Array
+                (
+                )
+
+        )
+
+    [175] => Array
+        (
+            [ID] => 175
+            [IBLOCK_ID] => 2
+            [CODE] => LIGHT
+            [~NAME] => Молния на чехле
+            [NAME] => Молния на чехле
+            [PROPERTY_TYPE] => S
+            [USER_TYPE] => 
+            [USER_TYPE_SETTINGS] => 
+            [DISPLAY_TYPE] => F
+            [DISPLAY_EXPANDED] => 
+            [FILTER_HINT] => 
+            [VALUES] => Array
+                (
+                    [нет] => Array
+                        (
+                            [CONTROL_ID] => arrFilter_175_905962009
+                            [CONTROL_NAME] => arrFilter_175_905962009
+                            [CONTROL_NAME_ALT] => arrFilter_175
+                            [HTML_VALUE_ALT] => 905962009
+                            [HTML_VALUE] => Y
+                            [VALUE] => нет
+                            [SORT] => 0
+                            [UPPER] => НЕТ
+                            [FLAG] => 
+                            [URL_ID] => %D0%BD%D0%B5%D1%82
+                        )
+
+                )
+
+        )
+
+    [176] => Array
+        (
+            [ID] => 176
+            [IBLOCK_ID] => 2
+            [CODE] => BASE
+            [~NAME] => Основание в комплекте
+            [NAME] => Основание в комплекте
+            [PROPERTY_TYPE] => S
+            [USER_TYPE] => 
+            [USER_TYPE_SETTINGS] => 
+            [DISPLAY_TYPE] => F
+            [DISPLAY_EXPANDED] => 
+            [FILTER_HINT] => 
+            [VALUES] => Array
+                (
+                )
+
+        )
+
+    [177] => Array
+        (
+            [ID] => 177
+            [IBLOCK_ID] => 2
+            [CODE] => SIZE_SHEETS
+            [~NAME] => Размер простыни, см
+            [NAME] => Размер простыни, см
+            [PROPERTY_TYPE] => S
+            [USER_TYPE] => 
+            [USER_TYPE_SETTINGS] => 
+            [DISPLAY_TYPE] => F
+            [DISPLAY_EXPANDED] => 
+            [FILTER_HINT] => 
+            [VALUES] => Array
+                (
+                )
+
+        )
+
+    [178] => Array
+        (
+            [ID] => 178
+            [IBLOCK_ID] => 2
+            [CODE] => SIZE_QUILTCOVER
+            [~NAME] => Размер пододеяльника, см
+            [NAME] => Размер пододеяльника, см
+            [PROPERTY_TYPE] => S
+            [USER_TYPE] => 
+            [USER_TYPE_SETTINGS] => 
+            [DISPLAY_TYPE] => F
+            [DISPLAY_EXPANDED] => 
+            [FILTER_HINT] => 
+            [VALUES] => Array
+                (
+                )
+
+        )
+
+    [179] => Array
+        (
+            [ID] => 179
+            [IBLOCK_ID] => 2
+            [CODE] => SIZE_PILLWCASES
+            [~NAME] => Размер наволочки, см
+            [NAME] => Размер наволочки, см
+            [PROPERTY_TYPE] => S
+            [USER_TYPE] => 
+            [USER_TYPE_SETTINGS] => 
+            [DISPLAY_TYPE] => F
+            [DISPLAY_EXPANDED] => 
+            [FILTER_HINT] => 
+            [VALUES] => Array
+                (
+                )
+
+        )
+
+    [180] => Array
+        (
+            [ID] => 180
+            [IBLOCK_ID] => 2
+            [CODE] => COMPOSITION
+            [~NAME] => Состав
+            [NAME] => Состав
+            [PROPERTY_TYPE] => S
+            [USER_TYPE] => 
+            [USER_TYPE_SETTINGS] => 
+            [DISPLAY_TYPE] => F
+            [DISPLAY_EXPANDED] => 
+            [FILTER_HINT] => 
+            [VALUES] => Array
+                (
+                )
+
+        )
+
+    [181] => Array
+        (
+            [ID] => 181
+            [IBLOCK_ID] => 2
+            [CODE] => HT
+            [~NAME] => Рекомендуемая высота матраса, см
+            [NAME] => Рекомендуемая высота матраса, см
+            [PROPERTY_TYPE] => S
+            [USER_TYPE] => 
+            [USER_TYPE_SETTINGS] => 
+            [DISPLAY_TYPE] => F
+            [DISPLAY_EXPANDED] => 
+            [FILTER_HINT] => 
+            [VALUES] => Array
+                (
+                )
+
+        )
+
+    [371] => Array
+        (
+            [ID] => 371
+            [IBLOCK_ID] => 2
+            [CODE] => OTDELKA
+            [~NAME] => Отделка
+            [NAME] => Отделка
+            [PROPERTY_TYPE] => S
+            [USER_TYPE] => directory
+            [USER_TYPE_SETTINGS] => Array
+                (
+                    [size] => 1
+                    [width] => 0
+                    [group] => N
+                    [multiple] => N
+                    [TABLE_NAME] => b_hlbd_otdelka
+                )
+
+            [DISPLAY_TYPE] => P
+            [DISPLAY_EXPANDED] => 
+            [FILTER_HINT] => 
+            [VALUES] => Array
+                (
+                )
+
+        )
+
+    [383] => Array
+        (
+            [ID] => 383
+            [IBLOCK_ID] => 2
+            [CODE] => dveri
+            [~NAME] => Кол-во дверей
+            [NAME] => Кол-во дверей
+            [PROPERTY_TYPE] => L
+            [USER_TYPE] => 
+            [USER_TYPE_SETTINGS] => 
+            [DISPLAY_TYPE] => F
+            [DISPLAY_EXPANDED] => 
+            [FILTER_HINT] => Количество створок в шкафу
+            [VALUES] => Array
+                (
+                )
+
+        )
+
+    [384] => Array
+        (
+            [ID] => 384
+            [IBLOCK_ID] => 2
+            [CODE] => yashchiki
+            [~NAME] => Кол-во ящиков
+            [NAME] => Кол-во ящиков
+            [PROPERTY_TYPE] => L
+            [USER_TYPE] => 
+            [USER_TYPE_SETTINGS] => 
+            [DISPLAY_TYPE] => P
+            [DISPLAY_EXPANDED] => 
+            [FILTER_HINT] => 
+            [VALUES] => Array
+                (
+                )
+
+        )
+
+    [385] => Array
+        (
+            [ID] => 385
+            [IBLOCK_ID] => 2
+            [CODE] => glubina_filter
+            [~NAME] => Глубина
+            [NAME] => Глубина
+            [PROPERTY_TYPE] => L
+            [USER_TYPE] => 
+            [USER_TYPE_SETTINGS] => 
+            [DISPLAY_TYPE] => P
+            [DISPLAY_EXPANDED] => 
+            [FILTER_HINT] => Размер шкафа или прихожей от задней стены до фасада
+            [VALUES] => Array
+                (
+                )
+
+        )
+
+    [386] => Array
+        (
+            [ID] => 386
+            [IBLOCK_ID] => 2
+            [CODE] => filter_cvet
+            [~NAME] => Цвет
+            [NAME] => Цвет
+            [PROPERTY_TYPE] => L
+            [USER_TYPE] => 
+            [USER_TYPE_SETTINGS] => 
+            [DISPLAY_TYPE] => P
+            [DISPLAY_EXPANDED] => 
+            [FILTER_HINT] => 
+            [VALUES] => Array
+                (
+                )
+
+        )
+
+    [393] => Array
+        (
+            [ID] => 393
+            [IBLOCK_ID] => 2
+            [CODE] => MATERIALKARKASA
+            [~NAME] => Материал каркаса
+            [NAME] => Материал каркаса
+            [PROPERTY_TYPE] => S
+            [USER_TYPE] => directory
+            [USER_TYPE_SETTINGS] => Array
+                (
+                    [size] => 1
+                    [width] => 0
+                    [group] => N
+                    [multiple] => N
+                    [TABLE_NAME] => b_hlbd_materialkarkasa
+                )
+
+            [DISPLAY_TYPE] => F
+            [DISPLAY_EXPANDED] => 
+            [FILTER_HINT] => 
+            [VALUES] => Array
+                (
+                )
+
+        )
+
+    [402] => Array
+        (
+            [ID] => 402
+            [IBLOCK_ID] => 2
+            [CODE] => KLKMEBELI
+            [~NAME] => Коллекция мебели
+            [NAME] => Коллекция мебели
+            [PROPERTY_TYPE] => S
+            [USER_TYPE] => directory
+            [USER_TYPE_SETTINGS] => Array
+                (
+                    [size] => 1
+                    [width] => 0
+                    [group] => N
+                    [multiple] => N
+                    [TABLE_NAME] => b_hlbd_kollekciimebeli
+                )
+
+            [DISPLAY_TYPE] => P
+            [DISPLAY_EXPANDED] => 
+            [FILTER_HINT] => 
+            [VALUES] => Array
+                (
+                )
+
+        )
+
+    [407] => Array
+        (
+            [ID] => 407
+            [IBLOCK_ID] => 2
+            [CODE] => konstruktion
+            [~NAME] => Конструкция
+            [NAME] => Конструкция
+            [PROPERTY_TYPE] => L
+            [USER_TYPE] => 
+            [USER_TYPE_SETTINGS] => 
+            [DISPLAY_TYPE] => F
+            [DISPLAY_EXPANDED] => 
+            [FILTER_HINT] => 
+            [VALUES] => Array
+                (
+                )
+
+        )
+
+    [408] => Array
+        (
+            [ID] => 408
+            [IBLOCK_ID] => 2
+            [CODE] => stoleshnica
+            [~NAME] => Столешница
+            [NAME] => Столешница
+            [PROPERTY_TYPE] => L
+            [USER_TYPE] => 
+            [USER_TYPE_SETTINGS] => 
+            [DISPLAY_TYPE] => F
+            [DISPLAY_EXPANDED] => N
+            [FILTER_HINT] => 
+            [VALUES] => Array
+                (
+                )
+
+        )
+
+    [409] => Array
+        (
+            [ID] => 409
+            [IBLOCK_ID] => 2
+            [CODE] => nagruzka_na_spalnoye_mesto
+            [~NAME] => Нагрузка на спальное место, кг
+            [NAME] => Нагрузка на спальное место, кг
+            [PROPERTY_TYPE] => L
+            [USER_TYPE] => 
+            [USER_TYPE_SETTINGS] => 
+            [DISPLAY_TYPE] => P
+            [DISPLAY_EXPANDED] => N
+            [FILTER_HINT] => 
+            [VALUES] => Array
+                (
+                    [290] => Array
+                        (
+                            [CONTROL_ID] => arrFilter_409_4042479098
+                            [CONTROL_NAME] => arrFilter_409_4042479098
+                            [CONTROL_NAME_ALT] => arrFilter_409
+                            [HTML_VALUE_ALT] => 4042479098
+                            [HTML_VALUE] => Y
+                            [VALUE] => 140
+                            [SORT] => 500
+                            [UPPER] => 140
+                            [FLAG] => 
+                            [URL_ID] => 140
+                        )
+
+                )
+
+        )
+
+    [410] => Array
+        (
+            [ID] => 410
+            [IBLOCK_ID] => 2
+            [CODE] => pruzhiny
+            [~NAME] => Пружин на спальное место
+            [NAME] => Пружин на спальное место
+            [PROPERTY_TYPE] => L
+            [USER_TYPE] => 
+            [USER_TYPE_SETTINGS] => 
+            [DISPLAY_TYPE] => P
+            [DISPLAY_EXPANDED] => N
+            [FILTER_HINT] => 
+            [VALUES] => Array
+                (
+                    [312] => Array
+                        (
+                            [CONTROL_ID] => arrFilter_410_3622229225
+                            [CONTROL_NAME] => arrFilter_410_3622229225
+                            [CONTROL_NAME_ALT] => arrFilter_410
+                            [HTML_VALUE_ALT] => 3622229225
+                            [HTML_VALUE] => Y
+                            [VALUE] => 550
+                            [SORT] => 500
+                            [UPPER] => 550
+                            [FLAG] => 
+                            [URL_ID] => 550
+                        )
+
+                )
+
+        )
+
+    [412] => Array
+        (
+            [ID] => 412
+            [IBLOCK_ID] => 2
+            [CODE] => vysota_matrasa
+            [~NAME] => Высота матраса, см
+            [NAME] => Высота матраса, см
+            [PROPERTY_TYPE] => L
+            [USER_TYPE] => 
+            [USER_TYPE_SETTINGS] => 
+            [DISPLAY_TYPE] => P
+            [DISPLAY_EXPANDED] => N
+            [FILTER_HINT] => 
+            [VALUES] => Array
+                (
+                    [335] => Array
+                        (
+                            [CONTROL_ID] => arrFilter_412_2075403208
+                            [CONTROL_NAME] => arrFilter_412_2075403208
+                            [CONTROL_NAME_ALT] => arrFilter_412
+                            [HTML_VALUE_ALT] => 2075403208
+                            [HTML_VALUE] => Y
+                            [VALUE] => 22
+                            [SORT] => 500
+                            [UPPER] => 22
+                            [FLAG] => 
+                            [URL_ID] => 22
+                        )
+
+                    [336] => Array
+                        (
+                            [CONTROL_ID] => arrFilter_412_3804066418
+                            [CONTROL_NAME] => arrFilter_412_3804066418
+                            [CONTROL_NAME_ALT] => arrFilter_412
+                            [HTML_VALUE_ALT] => 3804066418
+                            [HTML_VALUE] => Y
+                            [VALUE] => 23
+                            [SORT] => 500
+                            [UPPER] => 23
+                            [FLAG] => 
+                            [URL_ID] => 23
+                        )
+
+                    [338] => Array
+                        (
+                            [CONTROL_ID] => arrFilter_412_84238197
+                            [CONTROL_NAME] => arrFilter_412_84238197
+                            [CONTROL_NAME_ALT] => arrFilter_412
+                            [HTML_VALUE_ALT] => 84238197
+                            [HTML_VALUE] => Y
+                            [VALUE] => 25
+                            [SORT] => 500
+                            [UPPER] => 25
+                            [FLAG] => 
+                            [URL_ID] => 25
+                        )
+
+                    [339] => Array
+                        (
+                            [CONTROL_ID] => arrFilter_412_1912762339
+                            [CONTROL_NAME] => arrFilter_412_1912762339
+                            [CONTROL_NAME_ALT] => arrFilter_412
+                            [HTML_VALUE_ALT] => 1912762339
+                            [HTML_VALUE] => Y
+                            [VALUE] => 26
+                            [SORT] => 500
+                            [UPPER] => 26
+                            [FLAG] => 
+                            [URL_ID] => 26
+                        )
+
+                )
+
+        )
+
+    [413] => Array
+        (
+            [ID] => 413
+            [IBLOCK_ID] => 2
+            [CODE] => podlokotniki
+            [~NAME] => Подлокотники
+            [NAME] => Подлокотники
+            [PROPERTY_TYPE] => L
+            [USER_TYPE] => 
+            [USER_TYPE_SETTINGS] => 
+            [DISPLAY_TYPE] => P
+            [DISPLAY_EXPANDED] => N
+            [FILTER_HINT] => 
+            [VALUES] => Array
+                (
+                )
+
+        )
+
+    [414] => Array
+        (
+            [ID] => 414
+            [IBLOCK_ID] => 2
+            [CODE] => vysota
+            [~NAME] => Высота габаритная, см
+            [NAME] => Высота габаритная, см
+            [PROPERTY_TYPE] => L
+            [USER_TYPE] => 
+            [USER_TYPE_SETTINGS] => 
+            [DISPLAY_TYPE] => P
+            [DISPLAY_EXPANDED] => N
+            [FILTER_HINT] => 
+            [VALUES] => Array
+                (
+                )
+
+        )
+
+    [46] => Array
+        (
+            [ID] => 46
+            [IBLOCK_ID] => 2
+            [CODE] => GESKOST
+            [~NAME] => Жесткость
+            [NAME] => Жесткость
+            [PROPERTY_TYPE] => S
+            [USER_TYPE] => directory
+            [USER_TYPE_SETTINGS] => Array
+                (
+                    [size] => 1
+                    [width] => 0
+                    [group] => N
+                    [multiple] => N
+                    [TABLE_NAME] => b_geskost
+                )
+
+            [DISPLAY_TYPE] => F
+            [DISPLAY_EXPANDED] => 
+            [FILTER_HINT] => 
+            [VALUES] => Array
+                (
+                    [zYMbqe6d] => Array
+                        (
+                            [CONTROL_ID] => arrFilter_46_3768007116
+                            [CONTROL_NAME] => arrFilter_46_3768007116
+                            [CONTROL_NAME_ALT] => arrFilter_46
+                            [HTML_VALUE_ALT] => 3768007116
+                            [HTML_VALUE] => Y
+                            [VALUE] => Мягкий / средний
+                            [SORT] => 100
+                            [UPPER] => МЯГКИЙ / СРЕДНИЙ
+                            [FLAG] => 
+                            [URL_ID] => zymbqe6d
+                        )
+
+                    [sred] => Array
+                        (
+                            [CONTROL_ID] => arrFilter_46_1575900915
+                            [CONTROL_NAME] => arrFilter_46_1575900915
+                            [CONTROL_NAME_ALT] => arrFilter_46
+                            [HTML_VALUE_ALT] => 1575900915
+                            [HTML_VALUE] => Y
+                            [VALUE] => Среднежесткий
+                            [SORT] => 100
+                            [UPPER] => СРЕДНЕЖЕСТКИЙ
+                            [FLAG] => 
+                            [URL_ID] => sred
+                        )
+
+                )
+
+        )
+
+    [47] => Array
+        (
+            [ID] => 47
+            [IBLOCK_ID] => 2
+            [CODE] => PRUG_BLOK
+            [~NAME] => Пружинный блок
+            [NAME] => Пружинный блок
+            [PROPERTY_TYPE] => S
+            [USER_TYPE] => directory
+            [USER_TYPE_SETTINGS] => Array
+                (
+                    [size] => 1
+                    [width] => 0
+                    [group] => N
+                    [multiple] => N
+                    [TABLE_NAME] => b_prugblok
+                )
+
+            [DISPLAY_TYPE] => F
+            [DISPLAY_EXPANDED] => 
+            [FILTER_HINT] => 
+            [VALUES] => Array
+                (
+                    [nezav] => Array
+                        (
+                            [CONTROL_ID] => arrFilter_47_1883134569
+                            [CONTROL_NAME] => arrFilter_47_1883134569
+                            [CONTROL_NAME_ALT] => arrFilter_47
+                            [HTML_VALUE_ALT] => 1883134569
+                            [HTML_VALUE] => Y
+                            [VALUE] => Независимый блок
+                            [SORT] => 100
+                            [UPPER] => НЕЗАВИСИМЫЙ БЛОК
+                            [FLAG] => 
+                            [URL_ID] => nezav
+                        )
+
+                )
+
+        )
+
+    [152] => Array
+        (
+            [ID] => 152
+            [IBLOCK_ID] => 2
+            [CODE] => PR
+            [~NAME] => Пружин на спальное место, шт
+            [NAME] => Пружин на спальное место, шт
+            [PROPERTY_TYPE] => S
+            [USER_TYPE] => 
+            [USER_TYPE_SETTINGS] => 
+            [DISPLAY_TYPE] => F
+            [DISPLAY_EXPANDED] => 
+            [FILTER_HINT] => 
+            [VALUES] => Array
+                (
+                    [550] => Array
+                        (
+                            [CONTROL_ID] => arrFilter_152_1493765235
+                            [CONTROL_NAME] => arrFilter_152_1493765235
+                            [CONTROL_NAME_ALT] => arrFilter_152
+                            [HTML_VALUE_ALT] => 1493765235
+                            [HTML_VALUE] => Y
+                            [VALUE] => 550
+                            [SORT] => 0
+                            [UPPER] => 550
+                            [FLAG] => 
+                            [URL_ID] => 550
+                        )
+
+                )
+
+        )
+
+    [149] => Array
+        (
+            [ID] => 149
+            [IBLOCK_ID] => 2
+            [CODE] => SPM
+            [~NAME] => Нагрузка на 1 спальное место, кг
+            [NAME] => Нагрузка на 1 спальное место, кг
+            [PROPERTY_TYPE] => S
+            [USER_TYPE] => 
+            [USER_TYPE_SETTINGS] => 
+            [DISPLAY_TYPE] => F
+            [DISPLAY_EXPANDED] => 
+            [FILTER_HINT] => 
+            [VALUES] => Array
+                (
+                    [140] => Array
+                        (
+                            [CONTROL_ID] => arrFilter_149_1192990190
+                            [CONTROL_NAME] => arrFilter_149_1192990190
+                            [CONTROL_NAME_ALT] => arrFilter_149
+                            [HTML_VALUE_ALT] => 1192990190
+                            [HTML_VALUE] => Y
+                            [VALUE] => 140
+                            [SORT] => 0
+                            [UPPER] => 140
+                            [FLAG] => 
+                            [URL_ID] => 140
+                        )
+
+                )
+
+        )
+
+    [150] => Array
+        (
+            [ID] => 150
+            [IBLOCK_ID] => 2
+            [CODE] => NETTO
+            [~NAME] => Допустимая разница в весе, кг
+            [NAME] => Допустимая разница в весе, кг
+            [PROPERTY_TYPE] => S
+            [USER_TYPE] => 
+            [USER_TYPE_SETTINGS] => 
+            [DISPLAY_TYPE] => F
+            [DISPLAY_EXPANDED] => 
+            [FILTER_HINT] => 
+            [VALUES] => Array
+                (
+                    [30] => Array
+                        (
+                            [CONTROL_ID] => arrFilter_150_2473281379
+                            [CONTROL_NAME] => arrFilter_150_2473281379
+                            [CONTROL_NAME_ALT] => arrFilter_150
+                            [HTML_VALUE_ALT] => 2473281379
+                            [HTML_VALUE] => Y
+                            [VALUE] => 30
+                            [SORT] => 0
+                            [UPPER] => 30
+                            [FLAG] => 
+                            [URL_ID] => 30
+                        )
+
+                )
+
+        )
+
+    [89] => Array
+        (
+            [ID] => 89
+            [IBLOCK_ID] => 2
+            [CODE] => Fabr
+            [~NAME] => Бренд
+            [NAME] => Бренд
+            [PROPERTY_TYPE] => E
+            [USER_TYPE] => 
+            [USER_TYPE_SETTINGS] => 
+            [DISPLAY_TYPE] => P
+            [DISPLAY_EXPANDED] => 
+            [FILTER_HINT] => 
+            [VALUES] => Array
+                (
+                    [15494] => Array
+                        (
+                            [CONTROL_ID] => arrFilter_89_2445564667
+                            [CONTROL_NAME] => arrFilter_89_2445564667
+                            [CONTROL_NAME_ALT] => arrFilter_89
+                            [HTML_VALUE_ALT] => 2445564667
+                            [HTML_VALUE] => Y
+                            [VALUE] => Аскона
+                            [SORT] => 511
+                            [UPPER] => АСКОНА
+                            [FLAG] => 
+                            [URL_ID] => askona
+                        )
+
+                )
+
+        )
+
+    [75] => Array
+        (
+            [ID] => 75
+            [IBLOCK_ID] => 2
+            [CODE] => Manufakter
+            [~NAME] => Страна изготовитель
+            [NAME] => Страна изготовитель
+            [PROPERTY_TYPE] => S
+            [USER_TYPE] => directory
+            [USER_TYPE_SETTINGS] => Array
+                (
+                    [size] => 1
+                    [width] => 0
+                    [group] => N
+                    [multiple] => N
+                    [TABLE_NAME] => b_manufakter
+                )
+
+            [DISPLAY_TYPE] => F
+            [DISPLAY_EXPANDED] => 
+            [FILTER_HINT] => 
+            [VALUES] => Array
+                (
+                    [rossiya] => Array
+                        (
+                            [CONTROL_ID] => arrFilter_75_1536120128
+                            [CONTROL_NAME] => arrFilter_75_1536120128
+                            [CONTROL_NAME_ALT] => arrFilter_75
+                            [HTML_VALUE_ALT] => 1536120128
+                            [HTML_VALUE] => Y
+                            [VALUE] => Россия
+                            [SORT] => 100
+                            [UPPER] => РОССИЯ
+                            [FLAG] => 
+                            [URL_ID] => rossiya
+                        )
+
+                )
+
+        )
+
+    [182] => Array
+        (
+            [ID] => 182
+            [IBLOCK_ID] => 3
+            [CODE] => RAZMER_SPALNOGO_MESTA
+            [~NAME] => Размер спального места
+            [NAME] => Размер спального места
+            [PROPERTY_TYPE] => S
+            [USER_TYPE] => directory
+            [USER_TYPE_SETTINGS] => Array
+                (
+                    [size] => 1
+                    [width] => 0
+                    [group] => N
+                    [multiple] => N
+                    [TABLE_NAME] => b_razmerspalnogovtsta
+                )
+
+            [DISPLAY_TYPE] => F
+            [DISPLAY_EXPANDED] => 
+            [FILTER_HINT] => 
+            [VALUES] => Array
+                (
+                )
+
+        )
+
+    [53] => Array
+        (
+            [ID] => 53
+            [IBLOCK_ID] => 3
+            [CODE] => HEHOL
+            [~NAME] => Чехол
+            [NAME] => Чехол
+            [PROPERTY_TYPE] => S
+            [USER_TYPE] => directory
+            [USER_TYPE_SETTINGS] => Array
+                (
+                    [size] => 1
+                    [width] => 0
+                    [group] => N
+                    [multiple] => N
+                    [TABLE_NAME] => b_hehol
+                )
+
+            [DISPLAY_TYPE] => F
+            [DISPLAY_EXPANDED] => 
+            [FILTER_HINT] => 
+            [VALUES] => Array
+                (
+                )
+
+        )
+
+    [54] => Array
+        (
+            [ID] => 54
+            [IBLOCK_ID] => 3
+            [CODE] => HEIGHT
+            [~NAME] => Длина
+            [NAME] => Длина
+            [PROPERTY_TYPE] => S
+            [USER_TYPE] => directory
+            [USER_TYPE_SETTINGS] => Array
+                (
+                    [size] => 1
+                    [width] => 0
+                    [group] => N
+                    [multiple] => N
+                    [TABLE_NAME] => b_height
+                )
+
+            [DISPLAY_TYPE] => F
+            [DISPLAY_EXPANDED] => 
+            [FILTER_HINT] => 
+            [VALUES] => Array
+                (
+                    [ug4tKSKI] => Array
+                        (
+                            [CONTROL_ID] => arrFilter_54_1649938797
+                            [CONTROL_NAME] => arrFilter_54_1649938797
+                            [CONTROL_NAME_ALT] => arrFilter_54
+                            [HTML_VALUE_ALT] => 1649938797
+                            [HTML_VALUE] => Y
+                            [VALUE] => Длина 190, 200
+                            [SORT] => 17
+                            [UPPER] => ДЛИНА 190, 200
+                            [FLAG] => 
+                            [URL_ID] => ug4tkski
+                        )
+
+                )
+
+        )
+
+    [55] => Array
+        (
+            [ID] => 55
+            [IBLOCK_ID] => 3
+            [CODE] => WIDTH
+            [~NAME] => Ширина
+            [NAME] => Ширина
+            [PROPERTY_TYPE] => S
+            [USER_TYPE] => directory
+            [USER_TYPE_SETTINGS] => Array
+                (
+                    [size] => 1
+                    [width] => 0
+                    [group] => N
+                    [multiple] => N
+                    [TABLE_NAME] => b_width
+                )
+
+            [DISPLAY_TYPE] => F
+            [DISPLAY_EXPANDED] => 
+            [FILTER_HINT] => 
+            [VALUES] => Array
+                (
+                    [80sm] => Array
+                        (
+                            [CONTROL_ID] => arrFilter_55_128048402
+                            [CONTROL_NAME] => arrFilter_55_128048402
+                            [CONTROL_NAME_ALT] => arrFilter_55
+                            [HTML_VALUE_ALT] => 128048402
+                            [HTML_VALUE] => Y
+                            [VALUE] => Ширина 80 см
+                            [SORT] => 3
+                            [UPPER] => ШИРИНА 80 СМ
+                            [FLAG] => 
+                            [URL_ID] => 80sm
+                        )
+
+                    [90sm] => Array
+                        (
+                            [CONTROL_ID] => arrFilter_55_3206396535
+                            [CONTROL_NAME] => arrFilter_55_3206396535
+                            [CONTROL_NAME_ALT] => arrFilter_55
+                            [HTML_VALUE_ALT] => 3206396535
+                            [HTML_VALUE] => Y
+                            [VALUE] => Ширина 90 см
+                            [SORT] => 4
+                            [UPPER] => ШИРИНА 90 СМ
+                            [FLAG] => 
+                            [URL_ID] => 90sm
+                        )
+
+                    [120sm] => Array
+                        (
+                            [CONTROL_ID] => arrFilter_55_322667585
+                            [CONTROL_NAME] => arrFilter_55_322667585
+                            [CONTROL_NAME_ALT] => arrFilter_55
+                            [HTML_VALUE_ALT] => 322667585
+                            [HTML_VALUE] => Y
+                            [VALUE] => Ширина 120 см
+                            [SORT] => 7
+                            [UPPER] => ШИРИНА 120 СМ
+                            [FLAG] => 
+                            [URL_ID] => 120sm
+                        )
+
+                    [140sm] => Array
+                        (
+                            [CONTROL_ID] => arrFilter_55_911268765
+                            [CONTROL_NAME] => arrFilter_55_911268765
+                            [CONTROL_NAME_ALT] => arrFilter_55
+                            [HTML_VALUE_ALT] => 911268765
+                            [HTML_VALUE] => Y
+                            [VALUE] => Ширина 140 см
+                            [SORT] => 8
+                            [UPPER] => ШИРИНА 140 СМ
+                            [FLAG] => 
+                            [URL_ID] => 140sm
+                        )
+
+                    [160sm] => Array
+                        (
+                            [CONTROL_ID] => arrFilter_55_2623083286
+                            [CONTROL_NAME] => arrFilter_55_2623083286
+                            [CONTROL_NAME_ALT] => arrFilter_55
+                            [HTML_VALUE_ALT] => 2623083286
+                            [HTML_VALUE] => Y
+                            [VALUE] => Ширина 160 см
+                            [SORT] => 11
+                            [UPPER] => ШИРИНА 160 СМ
+                            [FLAG] => 
+                            [URL_ID] => 160sm
+                        )
+
+                    [180sm] => Array
+                        (
+                            [CONTROL_ID] => arrFilter_55_2089182245
+                            [CONTROL_NAME] => arrFilter_55_2089182245
+                            [CONTROL_NAME_ALT] => arrFilter_55
+                            [HTML_VALUE_ALT] => 2089182245
+                            [HTML_VALUE] => Y
+                            [VALUE] => Ширина 180 см
+                            [SORT] => 12
+                            [UPPER] => ШИРИНА 180 СМ
+                            [FLAG] => 
+                            [URL_ID] => 180sm
+                        )
+
+                    [200sm] => Array
+                        (
+                            [CONTROL_ID] => arrFilter_55_4270994970
+                            [CONTROL_NAME] => arrFilter_55_4270994970
+                            [CONTROL_NAME_ALT] => arrFilter_55
+                            [HTML_VALUE_ALT] => 4270994970
+                            [HTML_VALUE] => Y
+                            [VALUE] => Ширина 200 см
+                            [SORT] => 13
+                            [UPPER] => ШИРИНА 200 СМ
+                            [FLAG] => 
+                            [URL_ID] => 200sm
+                        )
+
+                )
+
+        )
+
+    [114] => Array
+        (
+            [ID] => 114
+            [IBLOCK_ID] => 3
+            [CODE] => KRASHENIE
+            [~NAME] => Крашение
+            [NAME] => Крашение
+            [PROPERTY_TYPE] => S
+            [USER_TYPE] => directory
+            [USER_TYPE_SETTINGS] => Array
+                (
+                    [size] => 1
+                    [width] => 0
+                    [group] => N
+                    [multiple] => N
+                    [TABLE_NAME] => b_krasheniye
+                )
+
+            [DISPLAY_TYPE] => P
+            [DISPLAY_EXPANDED] => 
+            [FILTER_HINT] => 
+            [VALUES] => Array
+                (
+                )
+
+        )
+
+)

@@ -1,0 +1,50 @@
+.left-nav {
+    padding: 0 5px 5px;
+    margin: 10px 0;
+}
+.left-nav .title {
+    line-height: 1;
+    padding: 5px 0;
+    margin: 5px 0;
+    font-weight: bold;
+    font: 18px SegoeUISemiBold;
+}
+div#id-1 .title {
+    margin-top: 0;
+    border-top: 0;
+}
+.product-content .left-sidebar ul {
+    padding-left: 10px !important;
+}
+div.left-nav ul {
+	list-style: none !important	
+}
+.left-menu-depth-2  ul {
+    display: none;
+	padding-right: 15px;
+    position: relative;
+}
+ul.left-menu-depth-2 ul .ico-arrow {
+    margin-right: -14px;
+}
+div.left-nav li:first-child, div.left-nav li {
+    margin-top: 5px !important;
+}
+.product-content .left-sidebar li a {
+	font: 13px SegoeUIRegular !important;
+	display: inline-block;
+}
+
+.ico-arrow {
+	cursor: pointer;
+	display: inline-block;
+	float: right;
+}
+.left-sidebar-item {display: none;}
+ul.left-menu-depth-3, ul.left-menu-depth-4, ul.left-menu-depth-5 {
+    padding-left: 10px !important;
+}
+.left-sidebar-item > li {
+    list-style: none;
+    padding-left: 10px;
+}

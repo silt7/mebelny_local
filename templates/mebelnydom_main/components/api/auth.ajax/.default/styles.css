@@ -1,0 +1,4 @@
+.api_auth_ajax *{ -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+#api_auth_ajax_modal{z-index: 990}
+#api_auth_ajax_modal .api_modal_content > div{display: none}
+#api_auth_ajax_modal .api_modal_content >div.api_active{display: block}

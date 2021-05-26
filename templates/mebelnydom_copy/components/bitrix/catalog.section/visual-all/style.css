@@ -1,0 +1,28 @@
+.t-table__card__del-btn { left:8px !important;}
+.product-wrap .product-block{
+    padding-top: 0;
+}
+
+.bx-no-touch #wrap-news.product-flex-box .product-wrap:hover .product-block{
+    height: 412px !important;
+}
+.js-ax-show-more-pagination{
+    max-width: 500px;
+}
+@media screen and (max-width: 1024px) {
+    #wrap-news.product-flex-box .product-wrap .product-block, #wrap-news.product-flex-box .product-wrap {
+        height: 410px !important;
+        display: flex;
+        flex-direction: column;
+    }
+    .desc-product{
+        height: 38px !important;
+        min-height: 38px !important;
+        overflow: hidden;
+        margin-bottom: 10px !important;
+    }
+    .product-block .buscket{
+        margin-top: auto;
+        margin-bottom: 10px;
+    }
+}

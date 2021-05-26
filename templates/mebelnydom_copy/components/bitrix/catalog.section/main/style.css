@@ -1,0 +1,8 @@
+.popular-product__block img,
+.right-block .banner img {
+    transition: transform .2s; /* Animation */
+}
+.popular-product__block img:hover,
+.right-block .banner img:hover {
+    transform: scale(1.2);
+}

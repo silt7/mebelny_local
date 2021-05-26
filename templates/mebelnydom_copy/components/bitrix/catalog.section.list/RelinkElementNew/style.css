@@ -1,0 +1,11 @@
+.relinkElement a {
+    font-size: 14px;    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: brown;
+}
+
+.relinkElement .level_2 > a {
+    font-size: 30px;
+    font-weight: bold;
+    color: crimson
+}

@@ -1,0 +1,766 @@
+#kombox-filter{
+	position: relative;
+}
+
+#kombox-filter ul{
+	list-style: none !important;
+	margin:0;
+	padding:0 0 20px 0;
+}
+
+#kombox-filter .lvl1 {
+	position: relative;
+	list-style: none !important;
+	margin:0;
+	padding:0;
+}
+
+#kombox-filter .lvl1:before, #kombox-filter li:before {
+	content: none !important;
+}
+
+#kombox-filter .kombox-filter-property-body{
+	color: #68788E;
+    font-size: 15px;
+}
+
+#kombox-filter .lvl2{
+	margin:0;
+	padding: 2px 0 0 0;
+}
+
+#kombox-filter .kombox-filter-property-head {
+	zoom: 1;
+	margin: 25px 11px 15px !important;
+	position: relative;
+    color: #4A5160;
+    font-size: 16px;
+}
+
+#kombox-filter .kombox-filter-property-i {
+	background: url("images/list.gif") no-repeat scroll center -9px rgba(0, 0, 0, 0);
+	display: block;
+	position: absolute;
+	font-size: 1px;
+	height: 9px;
+	left: 1px;
+	cursor: pointer;
+	top: 5px;
+	width: 9px;
+	zoom: 1;
+}
+#kombox-filter .kombox-num-from-word,
+#kombox-filter .kombox-num-to-word{
+    margin-right: 7px;
+    margin-left: 17px;
+    font-size: 16px;
+    line-height: 24px;
+}
+#kombox-filter .kombox-num-from-word{
+    margin-left: 0px;
+}
+}
+#kombox-filter .kombox-closed .kombox-filter-property-i {
+	background: url("images/list.gif") no-repeat scroll center top rgba(0, 0, 0, 0);
+}
+
+#kombox-filter .kombox-filter-property-name {
+	cursor: pointer;
+	position: relative;
+	font-weight:400;
+	width: 100%;
+}
+#kombox-filter .kombox-filter-property-name img{
+    float: right;
+    margin-top:8px;
+}
+#kombox-filter .kombox-filter-property-name i {
+    font-weight: normal;
+    color: #d2cdca;
+}
+#kombox-filter .kombox-num .kombox-input{
+    text-align: center;
+    width: 80px;
+    height: 32px;
+    border: 1px solid #C7CAD1;
+    background: none;
+    font-size: 16px;
+    line-height: 32px;
+    text-align: center;
+    color: #4A5160;
+}
+
+#kombox-filter .kombox-num .kombox-range{
+	padding:0 10px 19px 0;
+}
+
+#kombox-filter .kombox-num .kombox-range input{
+	display:none;
+}
+
+#kombox-filter div.kombox-combo, 
+#kombox-filter div.kombox-radio
+{
+	padding: 15px 0 0 0;
+	margin: 0;
+}
+
+#kombox-filter div.kombox-link
+{
+	padding: 0 0 0 15px;
+	margin: 0;
+}
+
+#kombox-filter div.kombox-select,
+#kombox-filter div.kombox-list
+{
+	padding: 0;
+	margin: 0;
+}
+
+#kombox-filter .kombox-select select,
+#kombox-filter .kombox-list select
+{
+	padding: 5px;
+	width:100%;
+}
+
+#kombox-filter .kombox-combo .lvl2 input,
+#kombox-filter .kombox-radio .lvl2 input{
+	margin:0;
+}
+
+#kombox-filter .kombox-combo .lvl2 label,
+#kombox-filter .kombox-radio .lvl2 label{
+	/* padding-left: 7px; */
+}
+
+#kombox-filter .kombox-disabled label,
+#kombox-filter .kombox-disabled a,
+#kombox-filter option.kombox-disabled{
+	color: #ccc;
+}
+
+#kombox-filter .kombox-link  .lvl2{
+	padding-left: 8px;
+	position: relative;
+	left: -8px;
+}
+
+#kombox-filter .kombox-link .kombox-checked{
+	padding-left: 0;
+}
+
+#kombox-filter .kombox-link  .lvl2 a{
+	padding: 2px 0 1px 0;
+	display: inline-block;
+}
+
+#kombox-filter .kombox-link .kombox-checked a{
+	border: 1px solid #e7e7e7;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	color: #3f454b;
+	padding: 1px 22px 1px 8px;
+	position: relative;
+	text-decoration:none;
+}
+
+#kombox-filter .kombox-link .kombox-checked a:hover{
+	border-color: #fbdada;
+	text-decoration:none;
+}
+
+#kombox-filter .kombox-link  .lvl2 a span.kombox-remove-link{
+	background: #ffffff url("images/remove_link.png") no-repeat 0 0;
+	display: none;
+	height: 8px;
+	margin-left: 8px;
+	position: absolute;
+	right: 8px;
+	top: 6px;
+	width: 8px;
+}
+
+#kombox-filter .kombox-link .kombox-checked a span.kombox-remove-link{
+	display: inline-block;
+}
+
+#kombox-filter .kombox-link .kombox-checked a:hover span.kombox-remove-link{
+	background-position: 0 100%;
+}
+
+#kombox-filter .kombox-link .kombox-disabled a{
+	color: #6f7980 !important;
+	border:none;
+	text-decoration:line-through;
+}
+
+#kombox-filter .kombox-disabled a{
+	border:none;
+	text-decoration:line-through;
+}
+
+#kombox-filter .lvl2 .kombox-cnt{
+	color: #6f7980;
+	font-size: .85em;
+}
+
+#kombox-filter .kombox-disabled .kombox-cnt, .kombox-filter .kombox-checked .kombox-cnt{
+	display:none;
+}
+
+#kombox-filter .kombox-checked a{
+	border:none;
+	color:#000;
+}
+
+#kombox-filter .kombox-filter-property-body a.kombox-values-other-show,
+#kombox-filter .kombox-filter-property-body a.kombox-values-other-hide{
+	font-size: .85em;
+	display:inline-block;
+	margin-top:5px;
+	border:0;
+}
+
+#kombox-filter .kombox-filter-property-hint{
+	cursor: pointer;
+	position: relative;
+	top: 2px;
+	width: 12px;
+	height: 12px;
+	margin-left:5px;
+	display: inline-block;
+	background: rgba(0, 0, 0, 0) url(images/hint.gif) no-repeat right center;
+}
+
+#kombox-filter .kombox-filter-property-hint-text{
+	display:none;
+}
+
+.kombox-filter-hint{
+	padding:5px 10px 5px 5px;
+	max-width: 500px;
+}
+
+#kombox-filter .modef {
+	top: -4px;
+	position: absolute;
+	padding-right:50px;
+	z-index:1000;
+}
+
+#kombox-filter .modef-right {
+
+}
+
+#kombox-filter .modef .modef-wrap {
+	background-color:#3E85DC;
+	border-radius: 2px;
+	color: #fff;
+	padding: 9px 24px;
+	white-space: nowrap;
+}
+
+#kombox-filter .modef-right .modef-wrap a {
+	color: #fff;
+	text-decoration:none;
+}
+
+#kombox-filter .kombox-loading {
+	position:absolute;
+	z-index:100;
+	left:0;
+	top:0;
+	display:none;
+}
+
+a.kombox-del-filter{
+    display: inline-block;
+    font: 13px SegoeUIRegular;
+    color: black;
+    border: 1px solid #D7D7D8;
+    padding: 10px 28px;
+    border-radius: 2px;
+    background: #F8F9FC;
+}
+a.kombox-del-filter:hover {
+    color: white;
+	border: 1px solid #3983df;
+	background-color: #3983df;
+}
+
+.kombox-filter-choice{
+	overflow: hidden;
+	padding: 5px 0 20px 0;
+}
+
+
+.kombox-filter-choice ul{
+	float: left;
+	margin-right: 15px;
+	margin-bottom: 10px;
+}
+
+.kombox-filter-choice li{
+	float: left;
+    border: 1px solid #e7e7e7;
+	border-right:0;
+    border-radius: 0;
+    color: #3f454b;
+    padding: 5px 25px 5px 15px;
+    position: relative;
+    text-decoration: none;
+}
+
+.kombox-filter-choice li:last-child{
+    border-radius: 0 5px 5px 0;
+    padding: 5px 25px 5px 15px;
+	border: 1px solid #e7e7e7;
+}
+
+.kombox-filter-choice li:first-child{
+    border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+    padding: 5px 25px 5px 15px;
+	border-left: 1px solid #e7e7e7;
+}
+
+.kombox-filter-choice li.kombox-filter-choice-item-name {
+    border-radius: 5px 0 0 5px;
+	padding: 5px 15px 5px 15px;
+	color: #000;
+    font-weight: bold;
+}
+
+.kombox-filter-choice li:hover{
+	border-color: #fbdada;
+	text-decoration:none;
+}
+
+.kombox-filter-choice li a, .kombox-filter-choice li a:hover{
+	text-decoration:none;
+	color: #3f454b;
+}
+
+.kombox-filter-choice li.kombox-filter-choice-item-name:hover {
+    border-color: #e7e7e7;
+}
+
+.kombox-filter-choice li .kombox-remove-link span{
+	background: #ffffff url("images/remove_link.png") no-repeat 0 0;
+	height: 8px;
+	margin-left: 8px;
+	position: absolute;
+	right: 8px;
+	top: 9px;
+	width: 8px;
+}
+
+.kombox-filter-choice li .kombox-remove-link span{
+	display: inline-block;
+}
+
+.kombox-filter-choice li:hover .kombox-remove-link span{
+	background-position: 0 100%;
+}
+
+.kombox-filter-choice-count {
+    float: left;
+    border: 1px solid #e7e7e7;
+    border-radius: 5px;
+    color: #000;
+    padding: 5px 25px 5px 15px;
+    position: relative;
+    text-decoration: none;
+    background: rgba(255, 234, 148, 0.42);
+}
+
+#kombox-filter .irs {
+    position: relative; display: block;
+}
+    #kombox-filter .irs-line {
+        position: relative; display: block;
+        overflow: hidden;
+    }
+        #kombox-filter .irs-line-left, #kombox-filter .irs-line-mid, #kombox-filter .irs-line-right {
+            position: absolute; display: block;
+            top: 0;
+        }
+        #kombox-filter .irs-line-left {
+            left: 0; width: 0%;
+        }
+        #kombox-filter .irs-line-mid {
+            left: 10%;
+        }
+        #kombox-filter .irs-line-right {
+            right: 0; width: 0%;
+        }
+
+    #kombox-filter .irs-diapason, #kombox-filter .irs-diapason-left, #kombox-filter .irs-diapason-right {
+        position: absolute; display: block;
+        left: 0; width: 100%;
+    }
+    #kombox-filter .irs-slider {
+        position: absolute; display: block;
+        cursor: default;
+        z-index: 1;
+    }
+        #kombox-filter .irs-slider.single {
+            left: 10px;
+        }
+            #kombox-filter .irs-slider.single:before {
+                position: absolute; display: block; content: "";
+                top: -50%; left: -100%;
+                width: 300%; height: 200%;
+                background: rgba(0,0,0,0.0);
+            }
+        #kombox-filter .irs-slider.from {
+            left: 100px;
+        }
+            #kombox-filter .irs-slider.from:before {
+                position: absolute; display: block; content: "";
+                top: -50%; left: -200%;
+                width: 300%; height: 200%;
+                background: rgba(0,0,0,0.0);
+            }
+        #kombox-filter .irs-slider.to {
+            left: 300px;
+        }
+            #kombox-filter .irs-slider.to:before {
+                position: absolute; display: block; content: "";
+                top: -50%; left: 0;
+                width: 300%; height: 200%;
+                background: rgba(0,0,0,0.0);
+            }
+        #kombox-filter .irs-slider.last {
+            z-index: 2;
+        }
+
+    #kombox-filter .irs-min {
+        position: absolute; display: block;
+        left: 0;
+        cursor: default;
+    }
+    #kombox-filter .irs-max {
+        position: absolute; display: block;
+        right: 0;
+        cursor: default;
+    }
+
+    #kombox-filter .irs-from, #kombox-filter .irs-to, #kombox-filter .irs-single {
+        position: absolute; display: block;
+        bottom: 0; left: 0;
+        cursor: default;
+        white-space: nowrap;
+		margin-bottom:-17px;
+    }
+	
+	#kombox-filter .irs-from {
+		margin-left:-7px;
+    }
+	
+	#kombox-filter .irs-to {
+		margin-left:10px;
+    }
+
+
+#kombox-filter .irs-grid {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 20px;
+}
+#kombox-filter .irs-with-grid #kombox-filter .irs-grid {
+    display: block;
+}
+    #kombox-filter .irs-grid-pol {
+        position: absolute;
+        bottom: 0; left: 0;
+        width: 1px; height: 8px;
+        background: #000;
+    }
+    #kombox-filter .irs-grid-pol.small {
+        height: 4px;
+    }
+    #kombox-filter .irs-grid-text {
+        position: absolute;
+        top: 0; left: 0;
+        width: 100px;
+        white-space: nowrap;
+        text-align: center;
+        font-size: 9px; line-height: 9px;
+        color: #000;
+    }
+	
+#kombox-filter .irs-line-mid,
+#kombox-filter .irs-line,
+#kombox-filter .irs-diapason-left, 
+#kombox-filter .irs-diapason-right,
+#kombox-filter .irs-slider {
+    /* background: url(images/slider.png) repeat-x; */
+}
+
+#kombox-filter .irs {
+    height: 40px;
+}
+#kombox-filter .irs-with-grid {
+    margin-top: -30px;
+}
+#kombox-filter .irs-line {
+    height: 2px !important;
+    top: 28px;
+    background-position: 0px 0px;
+    background-color: #C7CAD1;
+}
+    #kombox-filter .irs-line-left {
+        height: 8px;
+        background-position: 0 -30px;
+    }
+    #kombox-filter .irs-line-mid {
+        height: 2px;
+        background-position: left bottom;
+    }
+    #kombox-filter .irs-line-right {
+        height: 8px;
+        background-position: 100% -30px;
+    }
+
+#kombox-filter .irs-diapason, #kombox-filter .irs-diapason-left, #kombox-filter .irs-diapason-right {
+    height: 2px !important;
+    top: 28px;
+    background-position: 0 -60px;
+}
+
+#kombox-filter .irs-diapason{
+	background:#3983df;
+}
+
+#kombox-filter .irs-slider {
+    width: 22px; height: 22px;
+    top: 17px;
+    background-position: 0 -90px;
+}
+
+#kombox-filter .irs-min, #kombox-filter .irs-max {
+    color: #999;
+    font-size: 10px; line-height: 1.333;
+    text-shadow: none;
+    top: 0; padding: 1px 3px;
+    background: rgba(0,0,0,0.1);
+    border-radius: 3px;
+}
+.lt-ie9 #kombox-filter .irs-min, .lt-ie9 #kombox-filter .irs-max {
+    background: #ccc;
+}
+
+#kombox-filter .irs-from, #kombox-filter .irs-to, #kombox-filter .irs-single {
+    color: #fff;
+    font-size: 10px; line-height: 1;
+    text-shadow: none;
+    padding: 1px 5px;
+    background: rgba(0,0,0,0.3);
+    border-radius: 0;
+	display:none !important;
+}
+.lt-ie9 #kombox-filter .irs-from, .lt-ie9 #kombox-filter .irs-to, .lt-ie9 #kombox-filter .irs-single {
+    background: #999;
+}
+
+#kombox-filter .irs-grid-pol {
+    background: #99a4ac;
+}
+#kombox-filter .irs-grid-text {
+    color: #99a4ac;
+}
+
+#kombox-filter .irs-slider.from {
+    background-position: 0;
+    width: 16px;
+    height: 16px;
+    background: white;
+    border-radius: 50%;
+    top: 21px;
+    border: 3px solid #3983df;
+}
+
+#kombox-filter .irs-slider.to {
+    margin-left: 0;
+    background-position: 0;
+    width: 16px;
+    height: 16px;
+    background: white;
+    border-radius: 50%;
+    top: 21px;
+    border: 3px solid #3983df;
+}
+
+#irs-active-slider, #kombox-filter .irs-slider:hover {
+    background-position: -4px -105px;
+}
+.irs-with-grid .irs-grid {
+	display: none !important;
+}
+#kombox-filter input[type="submit"], #set_links_filter {
+	font-size: 16px;
+    color: white;
+	background: #3E85DC;
+	border: 1px solid #3E85DC;
+	border-radius: 2px;
+	cursor: pointer;
+}
+#set_links_filter{
+    display: none;
+    text-decoration: none;
+}
+#kombox-filter input[type="submit"]:hover, #set_links_filter:hover{
+	background: #3983df;
+	border:1px solid #3983df;
+}
+#kombox-filter .wds_filter_block {
+    border: 1px solid #EEEFF2;
+    margin-bottom: 5px;
+    max-width: 320px;
+    padding: 10px;
+    position: relative;
+    background: white;
+    padding-bottom: 0px;
+}
+.wds_filter_header {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 15px;
+}
+
+
+/***** Оформление чекбоксов *****/
+/* Customize the label (the container) */
+.wds_chkbox_container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 4px;
+  cursor: pointer;
+  line-height: 24px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 16px;
+  color: #4A5160;
+}
+/* Hide the browser's default checkbox */
+.wds_chkbox_container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+/* Create a custom checkbox */
+.wds_chkbox_checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #76798A;
+  box-sizing: border-box;
+  border-radius: 2px;
+  text-align: center;
+  line-height: 24px;
+}
+/* On mouse-over, add a grey background color */
+.wds_chkbox_container:hover input ~ .wds_chkbox_checkmark {
+  /*background-color: #ccc;*/
+}
+/* When the checkbox is checked, add a blue background */
+.wds_chkbox_container input:checked ~ .wds_chkbox_checkmark {
+  background-color: #3E85DC;
+  border:2px solid #3E85DC;
+}
+/* Create the checkmark/indicator (hidden when not checked) */
+.wds_chkbox_checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+/* Show the checkmark when checked */
+.wds_chkbox_container input:checked ~ .wds_chkbox_checkmark:after {
+  display: block;
+}
+/* Style the checkmark/indicator */
+.wds_chkbox_container .wds_chkbox_checkmark:after {
+left: 5px;
+    width: 7px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 3px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+#invert {
+    color: #3983df;
+    font-size: 13px;
+    display: inline-block;
+    line-height: 24px;
+    text-decoration: underline;
+    font-weight: 400;
+    float: right;
+}
+#invert:hover {
+
+}
+
+.kombox-filter.wds_fixed_filter {
+    position: fixed !important;
+    top: 30px;
+}
+.wds_filter_header{
+    margin: 15px 10px;
+    font-size: 18px;
+}
+#kombox-filter .wds_fltr_categories.lvl1{
+    margin-top: 27px;
+}
+/*.wds_chkbox_container .wds_chkbox_checkmark:after {
+    left: 7px;
+    top: 5px;
+    width: 7px;
+    height: 7px;
+    border: solid white;
+    border-width: 0 1px 1px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}*/
+.kombox-checked label{
+    color: #3983df;
+}
+@media screen and (min-width: 1025px) {
+    #modef{
+        margin-top: 10px;
+        margin-right: 22px;
+    }
+}
+@media screen and (max-width: 999px) {
+    #kombox-filter .modef .modef-wrap {
+        position:absolute;
+        right:-10px;
+    }
+    #kombox-filter .modef{
+        padding-right: 0px;
+    }
+}
+.lvl1[data-id="dlina_filter-70"]  .kombox-filter-property-head, .lvl1[data-id="glubina_filter-71"]  .kombox-filter-property-head, .lvl1[data-id="vysota_filter-72"]  .kombox-filter-property-head{
+    border-bottom: none !important;
+    margin-bottom: 0 !important;
+}
+.lvl2 a{
+    text-decoration:none;
+}
+.filter-icon img{
+    margin-top: 10px;
+}
+}

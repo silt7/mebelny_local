@@ -1,0 +1,207 @@
+  .ax-pagination {
+    clear: both;
+    padding: 0px 0 120px;
+  }
+
+  .ax-pagination * {
+    font-size: 14px;
+  }
+
+  .ax-pagination a {
+    text-decoration: none !important;
+  }
+
+  .ax-pagination .ax-show-more-pagination {
+    display: block;
+    margin: 0 auto 30px;
+    text-decoration: none;
+    background: #fff;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    width: 97%;
+    border: 1px solid #C7CAD1;
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px !important;
+    color: #4A5160;
+    cursor: pointer;
+    transition: 0.3s;
+
+  }
+
+  .ax-pagination .ax-show-more-pagination:hover {
+    background: #8392A8;
+  }
+
+  .ax-pagination .ax-link {
+    color: #3E85DC;
+    text-decoration: none;
+    /*-webkit-transition: color .3s ease, background-color .3s ease, border-color .3s ease;
+	-moz-transition: color .3s ease, background-color .3s ease, border-color .3s ease;
+	-ms-transition: color .3s ease, background-color .3s ease, border-color .3s ease;
+	-o-transition: color .3s ease, background-color .3s ease, border-color .3s ease;
+	transition: color .3s ease, background-color .3s ease, border-color .3s ease;*/
+  }
+
+  .ax-pagination .ax-link:active {
+    text-decoration: none;
+  }
+
+  .ax-pagination .ax-link:hover {
+    color: #000;
+  }
+
+  .ax-pagination .ax-link.ax-dotted-link {
+    font-size: 16px;
+    color: #4A5160;
+  }
+
+  .ax-pagination .ax-link.ax-dotted-link:hover {
+    border-bottom-color: #000;
+  }
+
+  .ax-pagination .ax-no-more {
+    color: #000;
+  }
+
+  .ax-pagination .ax-pagination-container {
+    text-align: center;
+    position: relative;
+  }
+
+  .ax-pagination .ax-pagination-container ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .ax-pagination .ax-pagination-container ul li {
+    display: inline-block;
+    margin: 0 2px 15px 2px;
+  }
+
+  .ax-pagination .ax-pagination-container ul li span {
+    -webkit-transition: color .3s ease, background-color .3s ease, border-color .3s ease;
+    -moz-transition: color .3s ease, background-color .3s ease, border-color .3s ease;
+    -ms-transition: color .3s ease, background-color .3s ease, border-color .3s ease;
+    -o-transition: color .3s ease, background-color .3s ease, border-color .3s ease;
+    transition: color .3s ease, background-color .3s ease, border-color .3s ease;
+    padding: 0 8px;
+    display: block;
+    height: 24px;
+    min-width: 24px;
+    line-height: 24px !important;
+    color: #4a5060;
+    font: 14px SegoeUIRegular;
+    vertical-align: middle;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .ax-pagination .ax-pagination-container ul li a {
+    text-decoration: none;
+    display: block;
+    height: 24px;
+    min-width: 24px;
+    line-height: 24px !important;
+    font-size: 14px;
+    color: white;
+    vertical-align: middle;
+  }
+
+  .ax-pagination .ax-pagination-container ul li a:hover span {
+    color: #000;
+  }
+
+  .ax-pagination .ax-pagination-container ul li.ax-active span {
+    background: #8392A8;
+    color: #fff;
+  }
+
+  .ax-pagination .ax-pagination-container ul li.ax-pag-prev {
+    margin-right: 30px;
+  }
+
+  .ax-pagination .ax-pagination-container ul li.ax-pag-next {
+    margin-left: 30px;
+  }
+
+  @media (max-width: 546px) {
+    .ax-pag-prev {
+      order: 2;
+      margin-top: 24px;
+      width: 50% !important;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+    }
+
+    .ax-pag-next {
+      width: 50% !important;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+      margin-top: 24px;
+      order: 3;
+    }
+
+    .ax-pagination .ax-pagination-container ul li {
+      margin: 0 4px 15px 4px;
+    }
+  }
+
+  .ax-pagination .ax-pagination-container ul li.ax-pag-all a span,
+  .ax-pagination .ax-pagination-container ul li.ax-pag-prev a span,
+  .ax-pagination .ax-pagination-container ul li.ax-pag-next a span {
+    line-height: 28px;
+    padding: 0 18px;
+    color: #4a5060;
+    font-size: 14px;
+  }
+
+  .ax-pagination .ax-pagination-container ul li.ax-pag-all span,
+  .ax-pagination .ax-pagination-container ul li.ax-pag-prev span,
+  .ax-pagination .ax-pagination-container ul li.ax-pag-next span {
+    color: #bebebe;
+    line-height: 28px;
+    padding: 0 18px;
+  }
+
+  .ax-pagination .ax-pagination-container ul li.ax-pag-all a:hover span,
+  .ax-pagination .ax-pagination-container ul li.ax-pag-prev a:hover span,
+  .ax-pagination .ax-pagination-container ul li.ax-pag-next a:hover span {
+    background: #fff;
+    color: #000;
+  }
+
+
+  .js-ax-ajax-pagination-container {
+    width: 100%;
+  }
+
+  .breakMobile {
+    display: none;
+  }
+
+  @media (max-width: 546px) {
+    .breakMobile {
+      display: block;
+      width: 100%;
+      height: 0;
+    }
+  }
+
+  .collections-page {
+    position: relative;
+    min-height: 200px;
+  }
+
+  .collections-loader {
+    position: absolute;
+    left: 50%;
+    z-index: 9;
+    top: 50px ;
+  }

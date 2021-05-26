@@ -1,0 +1,12 @@
+.content-wrap .left-sidebar .w2017 {
+    text-align: left;
+    padding-left: 30px;
+    padding-top: 25px;
+    padding-bottom: 28px;
+    border-bottom: 1px solid #eceff5;
+    display: block;
+}
+.content-wrap .left-sidebar .w2017 .h3 a {
+    font: 18px SegoeUISemiBold;
+    color: #4a5060;
+}

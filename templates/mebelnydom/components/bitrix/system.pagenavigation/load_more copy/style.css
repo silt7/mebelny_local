@@ -1,0 +1,34 @@
+.load_more {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    text-align: center;
+    clear: both;
+}
+.load_more_navstring .load_more {
+    font-family: 'SegoeUISemibold';
+    background: white;
+}
+.nav-current-page {
+    background: #4a5060;
+    color: white;
+}
+.navigation-arrows {
+    display: none;
+}
+.navigation {
+    text-align: center;
+    margin: 20px 0;
+}
+.navigation-pages {
+    display: inline-block;
+}
+.navigation-pages a {
+    font-family: 'SegoeUISemibold';
+    display: inline-block;
+    width: 30px; height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    text-align: center;
+}
