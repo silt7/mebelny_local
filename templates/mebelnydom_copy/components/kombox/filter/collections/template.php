@@ -10,7 +10,7 @@
         
         $elements = CIBlockElement::GetList (
            Array("SORT" => "ASC"),
-           Array("SECTION_ID" => $sectionUri["ID"], array("LOGIC" => "OR", ">PROPERTY_POD_ZAKAZ" => 0, ">PROPERTY_QTY" => 0))
+           Array("SECTION_ID" => $sectionUri["ID"], "ACTIVE" => "Y", array("LOGIC" => "OR", ">PROPERTY_POD_ZAKAZ" => 0, ">PROPERTY_QTY" => 0))
         );
         
         $sectionArr = [];
@@ -21,7 +21,7 @@
             $arrFilter = [];
         }
         while ($element = $elements->GetNext()){
-            $sections = CIBlockElement::GetElementGroups($element['ID'], false, ["CODE", "NAME", "PROPERTY_QTY"]);
+            $sections = CIBlockElement::GetElementGroups($element['ID'], false, ["CODE", "NAME"]);
             while ($section = $sections->GetNext()){
                 if($uri[3] == 'filter'){
                     $filter = explode('-', $uri[4]);

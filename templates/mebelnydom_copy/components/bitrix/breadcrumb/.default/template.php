@@ -54,6 +54,7 @@ foreach ($arResult as $key => $arItem){
 							$arResult[$key]["TITLE"] = $arSectionChild["UF_BREADCRUMBS_NAME"];
 						}
 					}
+					$arResult[$key]["SECTION_ID"] = $parentId;
 				}
 			}
 		}
@@ -78,29 +79,55 @@ for($index = 0; $index < $itemSize; $index++)
 
 	$nextRef = ($index < $itemSize-2 && $arResult[$index+1]["LINK"] <> ""? ' itemref="bx_breadcrumb_'.($index+1).'"' : '');
 	$child = ($index > 0? ' itemprop="child"' : '');
+
 	if($arResult[$index]["LINK"] <> "" && $index != $itemSize-1)
 	{
-		if (($index == 2) && ($GLOBALS["FOR_BREADCRUMB"] == 'detail')){       
-            $db_list = \Bitrix\Iblock\SectionTable::GetList([
-                'order' =>  ["SORT"=>"ASC"],
-                'select' => ['ID', 'NAME', 'CODE'],
-                'filter' => ['ACTIVE'=>'Y', 'IBLOCK_SECTION_ID'=>$parentSectionId],
-                'limit' => 5
-            ])->fetchAll();
-            if(!empty($db_list)){
-                $strReturn .= '<div class="breadcrums__item breadcrums__item-drop" style="position:relative">';
-    		    $strReturn .= '<a href="'.$arResult[$index]["LINK"].'" class="breadcrums__link breadcrums__link-drop">'.$title.'</a>';
-                $strReturn .= '<div class="breadcrums__item-list" style="display: none;">';
-                foreach($db_list as $item){
-                    $strReturn .= '<a href="/'.$code.'/'.$item['CODE'].'/" class="breadcrums__link breadcrums__link">'.$item['NAME'].'</a>';
-                }
-                $strReturn .= '</div>';
-    			$strReturn .= '</div>';
-            } else {
-                $strReturn .= '<a href="'.$arResult[$index]["LINK"].'" class="breadcrums__link">'.$title.'</a>';
-            }
+		$elements = CIBlockElement::GetList (
+			Array("SORT" => "ASC"),
+			Array("SECTION_ID" => $arResult[$index]["SECTION_ID"], "ACTIVE"=>"Y", array("LOGIC" => "OR", ">PROPERTY_POD_ZAKAZ" => 0, ">PROPERTY_QTY" => 0))
+		);
+		$countElement = $elements->SelectedRowsCount();
+
+		if( ($countElement > 0) || (empty($arResult[$index]["SECTION_ID"] != '')) ){
+			if (($index == 2) && ($GLOBALS["FOR_BREADCRUMB"] == 'detail')){       
+				$db_list = \Bitrix\Iblock\SectionTable::GetList([
+					'order' =>  ["SORT"=>"ASC"],
+					'select' => ['ID', 'NAME', 'CODE'],
+					'filter' => ['ACTIVE'=>'Y', 'IBLOCK_SECTION_ID'=>$parentSectionId],
+					'limit' => 10
+				])->fetchAll();
+
+
+				if(!empty($db_list)){
+					$strReturn .= '<div class="breadcrums__item breadcrums__item-drop" style="position:relative">';
+					$strReturn .= '<a href="'.$arResult[$index]["LINK"].'" class="breadcrums__link breadcrums__link-drop">'.$title.'</a>';
+					$strReturn .= '<div class="breadcrums__item-list" style="display: none;">';
+					
+					$i = 0;
+					foreach($db_list as $item){
+						$elements = CIBlockElement::GetList (
+							Array("SORT" => "ASC"),
+							Array("SECTION_ID" => $item["ID"], "ACTIVE"=>"Y", array("LOGIC" => "OR", ">PROPERTY_POD_ZAKAZ" => 0, ">PROPERTY_QTY" => 0))
+						);
+						$countElement_2 = $elements->SelectedRowsCount();
+						if($countElement_2){
+							$strReturn .= '<a href="/'.$code.'/'.$item['CODE'].'/" class="breadcrums__link breadcrums__link">'.$item['NAME'].'</a>';
+							$i++;
+						}
+						
+						if($i == 5) break;	
+					}
+
+					$strReturn .= '</div>';
+					$strReturn .= '</div>';
+				} else {
+					$strReturn .= '<a href="'.$arResult[$index]["LINK"].'" class="breadcrums__link">'.$title.'</a>';
+				}
+			} else {
+				$strReturn .= '<a href="'.$arResult[$index]["LINK"].'" class="breadcrums__link">'.$title.'</a>';
+			}
 		} else {
-		    $strReturn .= '<a href="'.$arResult[$index]["LINK"].'" class="breadcrums__link">'.$title.'</a>';
+			unset($arResult[$index]);
 		}
 	}
 	else
