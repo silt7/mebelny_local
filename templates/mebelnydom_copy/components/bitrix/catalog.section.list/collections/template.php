@@ -25,7 +25,8 @@ foreach ($arResult['SECTIONS'] as $arSection) {
     <img width="70" height="70" src="/upload/loader.svg" alt="">
   </div>
 	<div class="container container-collection">
-		<div class="collection-items__wrap">
+		<div class="collection-items__wrap js-ax-ajax-pagination-content-container">
+    <!--ax-ajax-pagination-separator-->
 <?
 
 
@@ -55,7 +56,7 @@ foreach ($arResult['SECTIONS'] as $arSection) {
         
 
     
-      <div class="collection-item" data-id="<?=$arSection['ID']?>">
+      <div class="collection-item page-ajax load_more_item" data-id="<?=$arSection['ID']?>">
         <div class="collection-item__imgs">
           <div class="collection-item__slider">
             <? if (!empty($arSection['PICTURE'])) {?>
@@ -105,27 +106,50 @@ foreach ($arResult['SECTIONS'] as $arSection) {
   endwhile;
   // $rs->NavPrint("", false, false, false);
 // }
+  $NAV_STRING = $rs->GetPageNavStringEx($navComponentObject, "Товары", "artmix_ajax_pagination", 'N');echo $NAV_STRING;
 ?>
+    <!--ax-ajax-pagination-separator-->
     </div>
-<?$NAV_STRING = $rs->GetPageNavStringEx($navComponentObject, "Товары", "artmix_ajax_pagination", 'N');
-echo $NAV_STRING."<br>";?>
+
   </div>
 <div class="container searchResult" style="display: flex">
 </div>
 </div>
 <!-- MORE_PHOTO -->
 <script>
- $(document).ready(function(e) {
-  //  setTimeout(function() {
-    //  $('.ax-pagination-container a').each(function() {
-      // let link = $(this).attr('href');
-      // link += '&clear_cache=Y#nav_start';
-      // $(this).attr('href', link);
-    // });
-  // }, 100);
-  // if ($('.ax-show-more-pagination span').text() != 'Показаны  все товары') {
-    // $('.ax-show-more-pagination').append('<a style="position: absolute; left:0; top: 0; width: 100%; height: 100%; opacity: 0; z-index: 1;" href="<?=$_SERVER['REDIRECT_URL']?>?COUNT=<?echo !empty($_REQUEST['COUNT']) ? $_REQUEST['COUNT'] + 20 : 60?>"></a>');
-  // }
+$(document).ready(function(e) {
+    //  setTimeout(function() {
+      //  $('.ax-pagination-container a').each(function() {
+        // let link = $(this).attr('href');
+        // link += '&clear_cache=Y#nav_start';
+        // $(this).attr('href', link);
+      // });
+    // }, 100);
+    // if ($('.ax-show-more-pagination span').text() != 'Показаны  все товары') {
+      // $('.ax-show-more-pagination').append('<a style="position: absolute; left:0; top: 0; width: 100%; height: 100%; opacity: 0; z-index: 1;" href="<?=$_SERVER['REDIRECT_URL']?>?COUNT=<?echo !empty($_REQUEST['COUNT']) ? $_REQUEST['COUNT'] + 20 : 60?>"></a>');
+    // }
+ 
+  console.log(jQuery().axpajax);
+  if (typeof(jQuery) != 'undefined' && jQuery().axpajax) {
+
+      $('.js-ax-ajax-pagination-content-container').axpajax({
+          lazyDynamic: false,
+          lazyDynamicTimeout: 0,
+          lazyDynamicOffset: -300,
+          lazyDynamicDelayedStart: false,
+          pagination: '.js-ax-ajax-pagination-container a.js-ax-pager-link',
+          lazyLoad: '.js-ax-ajax-pagination-container .js-ax-show-more-pagination',
+          lazyContainer: '.js-ax-ajax-pagination-container',
+          specialParams: {
+              ajax_page: true
+          },
+          callbacks: {
+              beforeLoad: function (obj) { },
+              afterLoad: function (obj) { },
+              onError: function (err) { }
+          }
+      });
+  }
 });
 </script>
 <style>.ax-show-more-pagination{position: relative}</style>

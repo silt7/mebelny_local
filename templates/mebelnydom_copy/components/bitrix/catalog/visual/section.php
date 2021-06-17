@@ -236,7 +236,7 @@ if($ar_ress = $res->GetNext()) {
 		"SHOW_404" => "N",
 		"MESSAGE_404" => "",
 		"COMPATIBLE_MODE" => "Y",
-		"DISABLE_INIT_JS_IN_COMPONENT" => "N"
+		"DISABLE_INIT_JS_IN_COMPONENT" => "N",
 	),
 	false
 );?>
@@ -875,7 +875,8 @@ if($ar_ress = $res->GetNext()) {
             ),
             $component
             );?>
-            
+        <?$arSORT[0] = "PROPERTY_TOVARS_IN_NABOR";?>
+        <?$arSORT[1] = "DESC";?>     
     <?}?>
     
             <?
