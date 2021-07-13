@@ -317,30 +317,69 @@
 <!-- /.header-bottom -->
 </header>
 <!-- /.header -->
-<div id="bx_recall_popup_form" style="display:none;" class="bx_login_popup_form" >
-	<? $APPLICATION->IncludeComponent(
-    	"bitrix:form.result.new", 
-    	"fb2", 
-    	array(
-    		"CACHE_TIME" => "3600",
-    		"AJAX_OPTION_ADDITIONAL" => "INLINES",
-    		"CACHE_TYPE" => "Y",
-    		"AJAX_MODE" => "Y",
-    		"AJAX_OPTION_JUMP" => "N",
-    		"AJAX_OPTION_STYLE" => "N",
-    		"AJAX_OPTION_HISTORY" => "N",
-    		"CHAIN_ITEM_LINK" => "",
-    		"CHAIN_ITEM_TEXT" => "",
-    		"EDIT_URL" => "",
-    		"IGNORE_CUSTOM_TEMPLATE" => "N",
-    		"LIST_URL" => "",
-    		"SEF_MODE" => "Y",
-    		"SEF_FOLDER" => "/",
-    		"SUCCESS_URL" => "",
-    		"USE_EXTENDED_ERRORS" => "N",
-    		"WEB_FORM_ID" => "3",
-    		"COMPONENT_TEMPLATE" => "fb2"
-    	),
-    	false
-    );?>
+
+
+<div class="popup-wrapper" style="display: none;">
+    <div class="call-popup popup">
+    	<div class="popup-close">×</div>
+    	<div class="popup-form">
+         	<? $APPLICATION->IncludeComponent(
+            	"bitrix:form.result.new", 
+            	"fb3", 
+            	array(
+            		"CACHE_TIME" => "3600",
+            		"AJAX_OPTION_ADDITIONAL" => "INLINES",
+            		"CACHE_TYPE" => "Y",
+            		"AJAX_MODE" => "Y",
+            		"AJAX_OPTION_JUMP" => "N",
+            		"AJAX_OPTION_STYLE" => "N",
+            		"AJAX_OPTION_HISTORY" => "N",
+            		"CHAIN_ITEM_LINK" => "",
+            		"CHAIN_ITEM_TEXT" => "",
+            		"EDIT_URL" => "",
+            		"IGNORE_CUSTOM_TEMPLATE" => "N",
+            		"LIST_URL" => "",
+            		"SEF_MODE" => "Y",
+            		"SEF_FOLDER" => "/",
+            		"SUCCESS_URL" => "",
+            		"USE_EXTENDED_ERRORS" => "N",
+            		"WEB_FORM_ID" => "3",
+            		"COMPONENT_TEMPLATE" => "fb3"
+            	),
+            	false
+            );?>
+    	</div>
+    </div>
+    
+    
+    <div class="one_click-popup popup">
+	<div class="popup-close">×</div>
+	<div class="popup-form">
+		<? $APPLICATION->IncludeComponent(
+        	"bitrix:form.result.new", 
+        	"fb3", 
+        	array(
+        		"CACHE_TIME" => "3600",
+        		"AJAX_OPTION_ADDITIONAL" => "INLINES",
+        		"CACHE_TYPE" => "Y",
+        		"AJAX_MODE" => "Y",
+        		"AJAX_OPTION_JUMP" => "N",
+        		"AJAX_OPTION_STYLE" => "N",
+        		"AJAX_OPTION_HISTORY" => "N",
+        		"CHAIN_ITEM_LINK" => "",
+        		"CHAIN_ITEM_TEXT" => "",
+        		"EDIT_URL" => "",
+        		"IGNORE_CUSTOM_TEMPLATE" => "N",
+        		"LIST_URL" => "",
+        		"SEF_MODE" => "Y",
+        		"SEF_FOLDER" => "/",
+        		"SUCCESS_URL" => "",
+        		"USE_EXTENDED_ERRORS" => "N",
+        		"WEB_FORM_ID" => "10",
+        		"COMPONENT_TEMPLATE" => "fb3"
+        	),
+        	false
+        );?>
+	</div>
+</div>
 </div>

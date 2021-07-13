@@ -326,7 +326,8 @@ if($ar_ress = $res->GetNext()) {
               </svg>
               Купить
             </button>
-            <button class="card__btn products__btns_oneclick" onclick="openRecallPopup(click1 = 'Y')">В 1 клик</button>
+            <? $file_wm = CFile::ResizeImageGet($arElement["PREVIEW_PICTURE"], array( "width" => 300, "height" => 220 ), BX_RESIZE_IMAGE_PROPORTIONAL_ALT, false, false)?>
+            <button class="card__btn products__btns_oneclick" onclick="openClick1Popup('<?= $arElement["NAME"].':'.$file_wm['src'];?>')">В 1 клик</button>
             <?else:?>
             <button class="card__btn products__btns_arrival" onclick="openRecallPopup2('<?=$arElement['NAME'];?>')">Сообщить о поступлении</button>
             <?endif?>

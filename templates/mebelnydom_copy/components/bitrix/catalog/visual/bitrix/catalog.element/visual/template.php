@@ -272,7 +272,8 @@
 					<span class="products__btns_price_old"><?=$arPrice['PRINT_VALUE_VAT']?></span>
 					<?endif;?>
 					<span class="products__btns_price"><?=$arResult['PRICE']?></span>
-					<button class="products__btns_oneclick" onclick="openRecallPopup(click1 = 'Y')">Купить в 1 клик</button>
+					<? $file_wm = CFile::ResizeImageGet($arResult["PROPERTIES"]["MORE_PHOTO"]["VALUE"][0], array( "width" => 68, "height" => 48 ), BX_RESIZE_IMAGE_EXACT , false, false)?>
+					<button class="products__btns_oneclick" onclick="openClick1Popup('<?= $arResult["NAME"].':'.$file_wm['src'];?>')">Купить в 1 клик</button>
 					<? if (!empty($arResult['NABOR'])):?>
                         <button class="products__btns_cart" onclick="add_basket_nabor()">В корзину</button>
                     <? else: ?>

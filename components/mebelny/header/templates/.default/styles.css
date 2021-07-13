@@ -1097,9 +1097,290 @@ header {
   content: none !important;
 }
 
+
 @media (max-width: 546px) {
   .container {
     padding-left: 10px;
     padding-right: 10px;
   }
 }
+
+
+
+/*---Формы обратного звонка и купить в 1 клик----*/
+.popup-wrapper {
+	z-index: 9999999;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.5);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.popup {
+	display: none;
+	background: #fff;
+	padding: 56px 120px;
+	border-radius: 32px;
+	position: relative;
+	text-align: center;
+	width: 640px;
+	box-sizing: border-box;
+}
+
+.popup-title {
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 32px;
+	color: #4A5160;
+	margin-bottom: 35px;
+}
+
+.popup-form label {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 20px;
+	font-feature-settings: 'liga' off;
+	color: #76798A;
+	margin-bottom: 5px;
+	float: left;
+}
+
+.popup-form input {
+	display: block;
+	width: 100%;
+	margin-bottom: 28px;
+	border: 1px solid #D5D6DB;
+	box-sizing: border-box;
+	border-radius: 4px;
+	line-height: 56px;
+	height: 56px;
+	padding-left: 15px;
+	font-family: Roboto;
+	font-size: 16px;
+	color: #4A5160;
+}
+
+.popup-form input[type=submit], .popup-form .call-cancel {
+	margin-top: 40px;
+	height: 44px;
+	line-height: 42px;
+	width: 188px;
+	box-sizing: border-box;
+
+}
+
+.popup-form input[type=submit] {
+	/*margin-left: 24px;*/
+	background: #3E85DC;
+	border-radius: 2px;
+	font-family: Open Sans;
+	font-size: 16px;
+	text-align: center;
+	color: #fff;
+	border: none;
+	float: right;
+	transition: 0.3s;
+	cursor: pointer;
+	border: 1px solid transparent;
+}
+
+.popup-form .call-cancel {
+	background: #FFFFFF;
+	float: left;
+	text-decoration: none;
+	border: 1px solid #3E85DC;
+	box-sizing: border-box;
+	border-radius: 2px;
+	font-family: Open Sans;
+	font-size: 16px;
+	text-align: center;
+	color: #3E85DC;
+	display: inline-block;
+	transition: 0.3s;
+	cursor:pointer;
+}
+
+.popup-form .call-cancel:hover {
+	background: #3E85DC;
+	color: #fff;
+}
+
+.popup-form input[type=submit]:hover {
+	background: #fff;
+	color: #3E85DC;
+	border: 1px solid #3E85DC;
+}
+
+.popup-close {
+	font-size: 45px;
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	cursor: pointer;
+}
+
+.one_click-popup label {
+	display: block;
+	width: 100%;
+	text-align: left;
+}
+
+.one_click-prod-item {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.one_click-prod-name {
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 24px;
+	width: 192px;
+	text-align: left;
+	color: #4A5160;
+}
+
+.one_click-prod-item .quantity-popup {
+  position: relative;
+}
+
+.one_click-prod-item input[type=number]::-webkit-inner-spin-button,
+.one_click-prod-item input[type=number]::-webkit-outer-spin-button
+{
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.one_click-prod-item input[type=number]
+{
+  -moz-appearance: textfield;
+}
+
+.one_click-prod-item .quantity-popup input {
+  width: 89px;
+  height: 42px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  color: #4A5160;
+  float: left;
+  display: block;
+  padding: 0;
+  margin: 0;
+  padding-left: 20px;
+  border: none;
+}
+
+.one_click-prod-item .quantity-button.quantity-up:after {
+	content: 'шт.';
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 0;
+	color: #76798A;
+	position: absolute;
+	left: -28px;
+	top: 0;
+	display: block;
+	width: 12px;
+	height: 12px;
+}
+
+.one_click-prod-item .quantity-popup input:focus {
+  outline: 0;
+}
+
+.one_click-prod-item .quantity-nav {
+  float: left;
+  position: relative;
+  height: 42px;
+}
+
+.one_click-prod-item .quantity-button {
+  position: relative;
+  cursor: pointer;
+  width: 20px;
+  text-align: center;
+  color: #8392A8;
+  font-size: 32px;
+  font-family: Open Sans;
+  font-weight: 100;
+  line-height: 0;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.one_click-prod-item .quantity-button.quantity-up {
+  position: absolute;
+  height: 50%;
+  top: 50%;
+  right: -18px;
+  border-radius: 30px;
+}
+
+.one_click-prod-item .quantity-button.quantity-down {
+  position: absolute;
+  bottom: 2px;
+  height: 50%;
+  left: -78px;
+  border-radius: 30px;
+}
+
+
+@media (max-width: 650px) {
+	.popup-close {
+		font-size: 35px;
+	}
+	.popup {
+		width: 100%;
+		padding: 56px 32px 35px 32px;
+		border-radius: 0;
+	}
+	.popup-form input[type=submit], .popup-form .call-cancel {
+		width: 136px;
+	}
+}
+
+@media (max-width: 400px) {
+	.quantity-popup {
+		width: 100%;
+		position: relative;
+		left: 50%;
+		transform: translateX(-12%);
+		margin-top: 15px;
+	}
+	.one_click-prod-item {
+		flex-wrap: wrap;
+		justify-content: flex-start;
+	}
+	.one_click-prod-item img {
+		margin-right: 25px;
+	}
+}
+
+@media (max-width: 350px) {
+	.popup {
+		padding: 56px 22px 35px 22px;
+	}
+}
+/*---END Формы обратного звонка и купить в 1 клик----*/

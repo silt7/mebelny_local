@@ -50,32 +50,31 @@
     }
   });
   
-    function openRecallPopup(click1 = "N")
+  
+    function openRecallPopup()
     {
-       var authPopup = BX.PopupWindowManager.create("RecallPopup", null, {
-             autoHide: true,
-             offsetLeft: 0,
-             offsetTop: 0,
-             overlay : true,
-             draggable: {restrict:true},
-             closeByEsc: true,
-             closeIcon: { right : "12px", top : "10px"},
-             content: '<div style="width:300px;height:200px; text-align: center;"></div>',
-                events: {
-                   onAfterPopupShow: function()
-                   {
-                         this.setContent(BX("bx_recall_popup_form"));
-                   }
-             }
-            });
-
-         authPopup.show();
-         if (click1 == 'Y'){
-            $('#RecallPopup').find('form').attr({"onsubmit": "ym(26789943,'reachGoal','1click', {URL:document.location.href}); gtag('event', '1click_ga')"});
-         } else {
-            $('#RecallPopup').find('form').attr({"onsubmit": "ym(26789943,'reachGoal','callback-or-freeconsultation', {URL:document.location.href}); gtag('event', 'kons_ga');"});             
-         }
+        $('.call-popup').find('form[name]').attr({"onsubmit": "ym(26789943,'reachGoal','callback-or-freeconsultation', {URL:document.location.href}); gtag('event', 'kons_ga');"}); 
+        $('.call-popup').fadeIn(0);
+	    $('.popup-wrapper').fadeIn(300);
     }
+    function openClick1Popup(info)
+    {
+        $('.one_click-popup').find('form').attr({"onsubmit": "ym(26789943,'reachGoal','1click', {URL:document.location.href}); gtag('event', '1click_ga')"});
+        
+        let arr = info.split(':');
+        window.title1click = arr[0].substr(0, 35) + '...';
+        window.title1clickFull = arr[0];
+        window.img1click = arr[1];
+        $('.one_click-prod-name').text(window.title1click);
+        $('.one_click-prod-item img').attr('src', window.img1click)
+        
+        $('.one_click-popup').fadeIn(0);
+    	$('.popup-wrapper').fadeIn(300);
+    }
+    $('.popup-close').click(function () {
+    	$('.popup').fadeOut(300);
+    	$('.popup-wrapper').fadeOut(300);
+    });
 
     // MOBILE MENU 
     function auth(action){

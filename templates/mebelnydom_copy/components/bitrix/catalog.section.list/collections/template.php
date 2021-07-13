@@ -1,4 +1,6 @@
 <? if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
+use Bitrix\Main\Application;
+$request = Application::getInstance()->getContext()->getRequest();
 
 foreach ($arResult['SECTIONS'] as $arSection) {
  $rsSection = CIBlockSection::GetList(array(), array('ID' => $arSection["ID"], 'ELEMENT_SUBSECTIONS' => 'N'), true, array());
@@ -26,7 +28,9 @@ foreach ($arResult['SECTIONS'] as $arSection) {
   </div>
 	<div class="container container-collection">
 		<div class="collection-items__wrap js-ax-ajax-pagination-content-container">
+    
     <!--ax-ajax-pagination-separator-->
+    <?if($request->isAjaxRequest() == 1) { $APPLICATION->RestartBuffer(); }?>
 <?
 
 
@@ -108,7 +112,28 @@ foreach ($arResult['SECTIONS'] as $arSection) {
 // }
   $NAV_STRING = $rs->GetPageNavStringEx($navComponentObject, "Товары", "artmix_ajax_pagination", 'N');echo $NAV_STRING;
 ?>
+
+      <div id='more_load'></div>
+      <script>
+        $('button.js-ax-show-more-pagination').click(function(){
+          let url = $(this).attr('data-href');
+          $('.ax-grey').remove();
+          $.ajax({
+            url: url,
+            type:'GET',
+            success: function(data){
+              $('#more_load').before(function() {
+                return data;
+              });
+            }
+          });
+        });
+
+      </script>
+
+      <?if($request->isAjaxRequest() == 1) { die(); }?>
     <!--ax-ajax-pagination-separator-->
+    
     </div>
 
   </div>
@@ -117,7 +142,7 @@ foreach ($arResult['SECTIONS'] as $arSection) {
 </div>
 <!-- MORE_PHOTO -->
 <script>
-$(document).ready(function(e) {
+  $(document).ready(function(e) {
     //  setTimeout(function() {
       //  $('.ax-pagination-container a').each(function() {
         // let link = $(this).attr('href');
@@ -128,29 +153,29 @@ $(document).ready(function(e) {
     // if ($('.ax-show-more-pagination span').text() != 'Показаны  все товары') {
       // $('.ax-show-more-pagination').append('<a style="position: absolute; left:0; top: 0; width: 100%; height: 100%; opacity: 0; z-index: 1;" href="<?=$_SERVER['REDIRECT_URL']?>?COUNT=<?echo !empty($_REQUEST['COUNT']) ? $_REQUEST['COUNT'] + 20 : 60?>"></a>');
     // }
- 
-  console.log(jQuery().axpajax);
+  });
   if (typeof(jQuery) != 'undefined' && jQuery().axpajax) {
-
-      $('.js-ax-ajax-pagination-content-container').axpajax({
-          lazyDynamic: false,
-          lazyDynamicTimeout: 0,
-          lazyDynamicOffset: -300,
-          lazyDynamicDelayedStart: false,
-          pagination: '.js-ax-ajax-pagination-container a.js-ax-pager-link',
-          lazyLoad: '.js-ax-ajax-pagination-container .js-ax-show-more-pagination',
-          lazyContainer: '.js-ax-ajax-pagination-container',
-          specialParams: {
-              ajax_page: true
-          },
-          callbacks: {
-              beforeLoad: function (obj) { },
-              afterLoad: function (obj) { },
-              onError: function (err) { }
-          }
+      $(document).ready(function () {
+          var paginat = $('.js-ax-ajax-pagination-content-container').axpajax({
+              lazyDynamic: false,
+              lazyDynamicTimeout: 0,
+              lazyDynamicOffset: -300,
+              lazyDynamicDelayedStart: false,
+              pagination: '.js-ax-ajax-pagination-container a.js-ax-pager-link',
+              lazyLoad: '.js-ax-ajax-pagination-container .js-ax-show-more-pagination',
+              lazyContainer: '.js-ax-ajax-pagination-container',
+              specialParams: {
+                  ajax_page: true
+              },
+              callbacks: {
+                  beforeLoad: function (obj) { },
+                  afterLoad: function (obj) { },
+                  onError: function (err) { }
+              }
+          });
+          console.log(paginat);
       });
   }
-});
 </script>
 <style>.ax-show-more-pagination{position: relative}</style>
 
